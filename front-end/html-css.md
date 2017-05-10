@@ -53,7 +53,7 @@ CSS files have to follow these rules :
 * **Be compliant on all modern browsers including IE11**
 * Use the mobile first approach**
 
-### Icons & Images
+## Icons & Images
 
 Icons have to follow these rules :
 
