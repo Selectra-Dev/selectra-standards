@@ -6,6 +6,7 @@
   * Editor
   * HTML
   * CSS
+  * Deployement
 * Icons & Images
 * Useful links
   * Common files
@@ -52,6 +53,30 @@ CSS files have to follow these rules :
 * Commented to be understandable if you use some irregular technics
 * **Be compliant on all modern browsers including IE11**
 * Use the mobile first approach**
+
+### Deployement
+
+  In order to optimize our workflow, our system administrator needs to be able to deploy ever project without needing to know how the project work. For a front-end project it means that the code must be shipped in such a way that it can be build using the following procedure :
+
+
+  1. **Clone the repo from GitHub**
+
+          git clone https://github.com/Selectra-Dev/landing-page-le-bon-coin.git
+          cd landing-page-le-bon-coin
+
+  2. **Acquire build dependencies.** Make sure you have [Node.js](http://nodejs.org/) installed on your workstation. Now run:
+
+          npm install
+
+  3. **Run the build tool**
+
+          grunt dist
+
+      Now you'll find the built files in `/dist/`.
+
+  4. **Optional: Optimize images (time consuming task)**
+
+          grunt dist-opti-img
 
 ## Icons & Images
 
