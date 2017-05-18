@@ -56,7 +56,7 @@ CSS files have to follow these rules :
 
 ### Deployement
 
-  In order to optimize our workflow, our system administrator needs to be able to deploy the project without any knowledge of its inner workings. For a front-end project it means that the code must be shipped in such a way that it can be built easily using the following procedure :
+  In order to optimize our workflow, our system administrator needs to be able to deploy the project without any knowledge of its inner workings. It means that the code must be shipped in such a way that it can be built easily using a well defined procedure. This procedure must be exhaustively described in a README.md file.
 
 
 ## Icons & Images
