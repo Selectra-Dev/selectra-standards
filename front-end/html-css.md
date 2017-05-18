@@ -56,7 +56,7 @@ CSS files have to follow these rules :
 
 ### Deployement
 
-  In order to optimize our workflow, our system administrator needs to be able to deploy ever project without needing to know how the project work. For a front-end project it means that the code must be shipped in such a way that it can be build using the following procedure :
+  In order to optimize our workflow, our system administrator needs to be able to deploy the project without any knowledge of its inner workings. For a front-end project it means that the code must be shipped in such a way that it can be build easily using the following procedure :
 
 
   1. **Clone the repo from GitHub**
