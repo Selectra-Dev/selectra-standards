@@ -59,25 +59,6 @@ CSS files have to follow these rules :
   In order to optimize our workflow, our system administrator needs to be able to deploy the project without any knowledge of its inner workings. For a front-end project it means that the code must be shipped in such a way that it can be built easily using the following procedure :
 
 
-  1. **Clone the repo from GitHub**
-
-          git clone https://github.com/Selectra-Dev/landing-page-le-bon-coin.git
-          cd landing-page-le-bon-coin
-
-  2. **Acquire build dependencies.** Make sure you have [Node.js](http://nodejs.org/) installed on your workstation. Now run:
-
-          npm install
-
-  3. **Run the build tool**
-
-          grunt dist
-
-      Now you'll find the built files in `/dist/`.
-
-  4. **Optional: Optimize images (time consuming task)**
-
-          grunt dist-opti-img
-
 ## Icons & Images
 
 Icons have to follow these rules :
