@@ -18,11 +18,11 @@ the developer is more comfortable working with another framework, it is possible
 Since we use docker to build our apps, the developer is free to work with any PHP version he is used to.
 ## Coding style
 
-The developper **MUST** follow the [PSR-1](http://www.php-fig.org/psr/psr-1/) and [PSR-2](http://www.php-fig.org/psr/psr-2/) specifications in order to facilitate maintenance.
+The developer **MUST** follow the [PSR-1](http://www.php-fig.org/psr/psr-1/) and [PSR-2](http://www.php-fig.org/psr/psr-2/) specifications in order to facilitate maintenance.
 
 ## Comments
 
-The code **SHOULD** be commmented if the developpers feels it's necessary. If the developper do choose to use comments in his code, the comments **MUST** follow the specifiactions
+The code **SHOULD** be commmented if the developers feels it's necessary. If the developer do choose to use comments in his code, the comments **MUST** follow the specifiactions
 of [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html)
 
 ## Deployement
