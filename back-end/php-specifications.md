@@ -22,7 +22,7 @@ The developer **MUST** follow the [PSR-1](http://www.php-fig.org/psr/psr-1/) and
 
 ## Comments
 
-The code **SHOULD** be commmented if the developers feels this is necessary. If the developer does choose to use comments in his code, the comments **MUST** follow the specifications
+The code **SHOULD** be commented if the developers feels this is necessary. If the developer does choose to use comments in his code, the comments **MUST** follow the specifications
 of [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html).
 
 ## Deployment
