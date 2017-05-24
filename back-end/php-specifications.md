@@ -15,7 +15,8 @@ the developer is more comfortable working with another framework, it is possible
 
 ## Server configuration
 
-Since we use docker to build our apps, the developer is free to work with any PHP version he is used to.
+PHP >= 5.6 **MUST** be used. Ideally, PHP7 **SHOULD** be used.
+
 ## Coding style
 
 The developer **MUST** follow the [PSR-1](http://www.php-fig.org/psr/psr-1/) and [PSR-2](http://www.php-fig.org/psr/psr-2/) specifications in order to facilitate maintenance.
