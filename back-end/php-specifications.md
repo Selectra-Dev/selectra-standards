@@ -4,7 +4,7 @@
 * Server configuration
 * Coding style
 * Comments
-* Deployement
+* Deployment
 
 
 
@@ -25,6 +25,6 @@ The developer **MUST** follow the [PSR-1](http://www.php-fig.org/psr/psr-1/) and
 The code **SHOULD** be commmented if the developers feels this is necessary. If the developer does choose to use comments in his code, the comments **MUST** follow the specifications
 of [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html).
 
-## Deployement
+## Deployment
 
   In order to optimize our workflow, our system administrator needs to be able to deploy the project without any knowledge of its inner workings. This means that the code **MUST** be shipped in such a way that it can be built easily using a well-defined procedure. This procedure **MUST** be exhaustively described in a README.md file.
