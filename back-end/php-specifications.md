@@ -27,4 +27,14 @@ of [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html).
 
 ## Deployment
 
+### Deployement workflow
+
   In order to optimize our workflow, our system administrator needs to be able to deploy the project without any knowledge of its inner workings. This means that the code **MUST** be shipped in such a way that it can be built easily using a well-defined procedure. This procedure **MUST** be exhaustively described in a README.md file.
+
+
+### Enrironment variable
+
+  To avoid unnecessary re-deployments, the developer **MUST** make good use of environment variables. Below is a non-exhaustive list of what **MUST** be an environment variable :
+  * Data base connection information
+  * Api keys
+  * ...
