@@ -39,4 +39,4 @@ of [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html).
   * Api keys
   * ...
 
-  In any case, the environment variables you used in your project **MUST** be listed int the README.md, along with what purpose they serve.
+  In any case, the environment variables you used in your project **MUST** be listed int the README.md, along with the purpose they serve.
