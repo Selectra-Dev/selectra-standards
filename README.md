@@ -1,6 +1,6 @@
 # selectra-programming-standards
 
-This repository describes the programming standards that must be followed for every project. This allows us to ensure consistency and easy maintenance across our web applications.
+This repository describes the standards we follow to build our applications. This standards **MUST** be followed for every project. This allows us to ensure consistency and easy maintenance across our web applications.
 
 Below are the meanings of the keywords used in the specifications :
 

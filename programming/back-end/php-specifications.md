@@ -38,3 +38,5 @@ of [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html).
   * Data base connection information
   * Api keys
   * ...
+
+  In any case, the environment variables you used in your project **MUST** be listed int the README.md, along with what purpose they serve.
