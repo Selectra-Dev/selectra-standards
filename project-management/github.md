@@ -25,8 +25,35 @@ The guidelines can be found [here](https://guides.GitHub.com/introduction/flow/)
 
 For some projects, it might be useful to use a more complex workflow. The complete guideline is available [here](http://nvie.com/posts/a-successful-git-branching-model/)
 
-## Some standards
+## Commits
 
-  ### commits
+### When do I need to commit ?
 
-  The commits **MUST** all be written using the following template:
+Commits on the public repository **MUST** follow the atomic approach :
+- Commit each fix or task as a separate change
+- Only commit when a block of work is complete
+- Commit each layout change separately
+- Joint commit for layout file, code behind file, and additional resources
+
+
+The goal is to be able to easily roll back a specific change, without affecting the others. However you **SHOULD NOT** commit unstable work. If you need to commit some unstable code to safeguard your work, do it on a local branch, and clean it up before merging to your master branch and pushing to the remote repository. [This article](https://sandofsky.com/blog/git-workflow.html) provides some good guidelines on the subject.
+
+### How do I write my commits
+
+Here are 7 rules you **MUST** respect when writing a commit :
+- Separate subject from body with a blank line
+- Limit the subject line to 50 characters
+- Capitalize the subject line
+- Do not end the subject line with a period
+- Use the imperative mood in the subject line
+- Wrap the body at 72 characters
+- Use the body to explain what and why vs.
+
+A good rule of thumb is to check if your commit subject could complete the sentence "If applied, this commit will..."
+
+Ex :
+- `If applied, this commit will changing behavior of X` :x:
+- `If applied, this commit will more fixes for broken stuff` :x:
+- `If applied, this commit will remove deprecated methods` :white_check_mark:
+
+You can find more on the subjects [in this article](https://chris.beams.io/posts/git-commit/) from which this guidelines are taken.
