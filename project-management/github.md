@@ -17,7 +17,7 @@ By default, we simply follow GitHub guidelines:
 - The shared repository on GitHub has one permanent branch: master. The content of this branch **MUST** always be deployable;
 - When working on a new fix or feature, the developer **MUST** create a new branch on the shared repository. It is **RECOMMENDED** that the developer commits his work on this branch regularly in order to keep a clean and useful history;
 - When the code is ready to be deployed, or when the developer wants to discuss some details concerning new features, he **MUST** create a pull request. He **MUST NOT** merge directly to master;
-- When the team agrees on the changes, the sysadmin merges the branch to master.
+- When the team agrees on the changes, the project manager merges the branch into master.
 
 The guidelines can be found [here](https://guides.GitHub.com/introduction/flow/).
 
