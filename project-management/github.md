@@ -56,4 +56,4 @@ Ex :
 - `If applied, this commit will more fixes for broken stuff` :x:
 - `If applied, this commit will remove deprecated methods` :white_check_mark:
 
-You can find more on the subjects [in this article](https://chris.beams.io/posts/git-commit/) from which these guidelines are taken.
+You can find more on the subject [in this article](https://chris.beams.io/posts/git-commit/) from which these guidelines are taken.
