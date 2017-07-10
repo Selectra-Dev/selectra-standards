@@ -36,7 +36,7 @@ Commits on the public repository **MUST** follow the atomic approach :
 - Joint commit for layout file, code behind file, and additional resources
 
 
-The goal is to be able to easily roll back a specific change, without affecting the others. However you **SHOULD NOT** commit unstable work. If you need to commit some unstable code to safeguard your work, do it on a local branch, and clean it up before merging to your master branch and pushing to the remote repository. [This article](https://sandofsky.com/blog/git-workflow.html) provides some good guidelines on the subject.
+The goal is to be able to easily roll back a specific change, without affecting the others. However, you **SHOULD NOT** commit unstable work. If you need to commit some unstable code to safeguard your work, do it on a local branch, and clean it up before merging to your master branch and pushing to the remote repository. [This article](https://sandofsky.com/blog/git-workflow.html) provides some good guidelines on the subject.
 
 ### How do I write my commits
 
@@ -56,4 +56,4 @@ Ex :
 - `If applied, this commit will more fixes for broken stuff` :x:
 - `If applied, this commit will remove deprecated methods` :white_check_mark:
 
-You can find more on the subjects [in this article](https://chris.beams.io/posts/git-commit/) from which this guidelines are taken.
+You can find more on the subjects [in this article](https://chris.beams.io/posts/git-commit/) from which these guidelines are taken.
