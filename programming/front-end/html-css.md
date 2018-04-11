@@ -1,25 +1,24 @@
-# Selectra’s HTML/CSS specifications
+Selectra’s HTML/CSS specifications
+=
 
+## Table of contents
 
 * Technical specifications
   * Design System
   * Editor
   * HTML
   * CSS
-  * Deployement
+  * Deployment
 * Icons & Images
 * Useful links
   * Common files
   * Menu/footer
 
-
-
-
 ## Technical specifications
 
 ### Design System
 
-The whole process **MUST** be based on **Design system** rules :
+The whole process **MUST** be based on **Design system** rules:
 
 **Basics > Components >  Templates > Features**
 
@@ -34,41 +33,40 @@ The developer **MUST** use our **[.editorconfig](http://editorconfig.org/)** fil
 
 ### HTML
 
-HTML files **MUST** follow these rules :
+HTML files **MUST** follow these rules:
 
 * **MUST** be Compiled with [pug](https://pugjs.org/api/getting-started.html) **(for the big projects)**
 * **MUST** be **W3C compliant**
 * **MUST** be **SEO friendly**, this means a **great outline tree**
 * **Accessible**, this means that a **screen reader** **MUST** be able to read pages with no error (great usage of role tag etc)
 * **SHOULD** be commented if the developer feels it's necessary. (Use of unusual techniques for instance).
-* **No duplication allowed** : a module **MUST** uses mobile first approach
+* **No duplication allowed**: a module **MUST** uses mobile first approach
 
 ### CSS
 
-CSS files **MUST** these rules :
+CSS files **MUST** these rules:
 
 * **MUST use [bootstrap v4](https://v4-alpha.getbootstrap.com/) latest alpha/beta as basic framework**
 * **MUST** be Compiled with **Sass** with **two configs**, one for **dev** (css not minified + map) and one for **dist** (css minified).
 * **MUST** be **[Linted](https://github.com/sasstools/sass-lint)** with the **scss-lint.yml** file
 * **SHOULD** be commented if the developer feels it's necessary. (Use of unusual techniques for instance).
 * **MUST be compliant on all modern browsers including IE11**
-* **No duplication allowed** : a module **MUST** uses mobile first approach
+* **No duplication allowed**: a module **MUST** uses mobile first approach
 
-### Deployement
+### Deployment
 
-  In order to optimize our workflow, our system administrator needs to be able to deploy the project without any knowledge of its inner workings. It means that the code **MUST** be shipped in such a way that it can be built easily using a well defined procedure. This procedure **MUST** be exhaustively described in a README.md file.
-
+In order to optimize our workflow, our system administrator needs to be able to deploy the project without any knowledge of its inner workings. It means that the code **MUST** be shipped in such a way that it can be built easily using a well defined procedure. This procedure **MUST** be exhaustively described in a README.md file.
 
 ## Icons & Images
 
-Icons **MUST** follow these rules :
+Icons **MUST** follow these rules:
 
 * **SVG** format, **compressed/optimized** with a tool like svgo.
 * You **SHOULD** Used as **sprite** where you can, called with id. (the sprite **MUST** be **called with ajax into shadow DOM**, this allow the browser to cache the file).
 * The used **grid** **MUST** be **24dp by 24dp**.
 * **viewBox parameters SHOULD NOT contain decimals**
 
-Images **MUST** follow these rules :
+Images **MUST** follow these rules:
 
 * **PNG** format, **compressed/optimized** with a tool like tinypng.
 * For **mobile, @2x/@3x** export

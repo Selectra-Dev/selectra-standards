@@ -1,10 +1,11 @@
-# Communication during the design phase
+Communication during the design phase
+=
 
 During the design phase of our projects, we use two softwares to allow the designers and the stake holders to communicate: **Invision** and **Slack**.
 
-Invision is a great tool to create prototypes, as it allows the team to give their feedback directly on the screen.
+**Invision** is a great tool to create prototypes, as it allows the team to give their feedback directly on the screen.
 
-We use Slack for any other discussion related to the project - provided this is not a direct feedback on the prototype (in such a case we would use InVision).
+We use **Slack** for any other discussion related to the project - provided this is not a direct feedback on the prototype (in such a case we would use InVision).
 
 ## Project set up
 

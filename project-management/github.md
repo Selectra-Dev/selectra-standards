@@ -1,4 +1,5 @@
-# How we use GitHub for our projects
+How we use GitHub for our projects
+=
 
 ## Our workflows
 
@@ -29,7 +30,7 @@ For some projects, it might be useful to use a more complex workflow. The comple
 
 ### When do I need to commit ?
 
-Commits on the public repository **MUST** follow the atomic approach :
+Commits on the public repository **MUST** follow the atomic approach:
 - Commit each fix or task as a separate change
 - Only commit when a block of work is complete
 - Commit each layout change separately
@@ -40,7 +41,7 @@ The goal is to be able to easily roll back a specific change, without affecting 
 
 ### How do I write my commits
 
-Here are 7 rules you **MUST** respect when writing a commit :
+Here are 7 rules you **MUST** respect when writing a commit:
 - Separate subject from body with a blank line
 - Limit the subject line to 50 characters
 - Capitalize the subject line
@@ -51,7 +52,7 @@ Here are 7 rules you **MUST** respect when writing a commit :
 
 A good rule of thumb is to check if your commit subject could complete the sentence "If applied, this commit will..."
 
-Ex :
+Ex:
 - `If applied, this commit will changing behavior of X` :x:
 - `If applied, this commit will more fixes for broken stuff` :x:
 - `If applied, this commit will remove deprecated methods` :white_check_mark:

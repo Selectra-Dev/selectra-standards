@@ -1,27 +1,30 @@
-# General Project management workflows
+General Project management workflows
+=
 
- - Projects
+# Table of contents
+
+- Projects
     - Announce the project
-    - Define the different steps and the team
+    - Define the different steps of your project, and who should be a part of it
     - Write the specifications
     - Quotations
     - Design
     - Kick-off meeting
     - Development
- - Maintenance
-     - Generalities
-     - Drupal modifications
+- Maintenance
+    - Generalities
+    - Drupal
 
+# Projects
 
-## Projects
   In order to build a reliable technical infrastructure, improve development time and reduce maintenance cost, it is essential that every project follows precise workflows. Therefore, when starting a new project, you **MUST** follow the following steps:
 
 ## 1. Announce the project
 
-The technical staff must be aware of the very existence of the project from the start. To that end, as soon as you start working on a new project you **MUST** :
- - Create a new card on [this board](https://trello.com/b/EI6byZd7). This card should provide a bird view of the project state. Here's what it **MUST** contain : [What should I put in a card?](https://trello.com/c/TiFmB8VC).
+The technical staff must be aware of the very existence of the project from the start. To that end, as soon as you start working on a new project you **MUST**:
+ - Create a new card on [this board](https://trello.com/b/EI6byZd7). This card should provide a bird view of the project state. Here's what it **MUST** contain: [What should I put in a card?](https://trello.com/c/TiFmB8VC).
  - Announce it on #project: a quick message mentioning the new project will do! And don't forget to add a link to the corresponding trello card.
- - Create a new slack channel: #project-$nameOfyourProject
+ - Create a new slack channel: #project-$nameOfYourProject
 
 ## 2. Define the different steps of your project, and who should be a part of it
 
@@ -40,12 +43,12 @@ For a project from scratch, here's the overall team:
 - *Front-End*: the developers who will be developing the Front-End. (Remember, Front-End is basically everything you see on a web application)
 - *Back-End*: the developers who will be developing the Back-End.
 - *System administrator*: who will be responsible for deploying the projects and defining technical constraints. (WARNING don't feed the system administrator after midnight)
-- *Project manager*: if you don't know who that is you probably shouldn't be reading this
+- *Project manager*: if you don't know who that is you probably **SHOULD NOT** be reading this
 
 ## 3. Write the specifications
 
 The specifications are here to explain your vision of the product.
-When writing specifications the first thing to know is: you can't write perfect specifications. Nobody can, especially for a web application. However, the key is to describe your needs in simple terms. Don't try to mix the description of the functionalities you want with how to implement them. If you do have technical recommendations to make, it **MUST** be completely independent from the functionality description.
+When writing specifications the first thing to know is: you can't write perfect specifications. Nobody can, especially for a web application. However, the key is to describe your needs in simple terms. Don't try to mix the description of the functionality you want with how to implement them. If you do have technical recommendations to make, it **MUST** be completely independent from the functionality description.
 
 It's strongly **RECOMMENDED** that you follow a pattern resembling this:
 "As a [user] I want to [functionality] so that [business value of the functionality]"
@@ -69,7 +72,6 @@ Before launching **any** development whatsoever you **MUST** organize a kick-off
 Project management methods are currently being studied - in the meantime here are some general recommendations:
  - You **SHOULD NOT** keep the Front-End team and the Back-End team separated, as it could be the source of lots of technical problems. It's better to have both teams work on the same functionality at the same time: it allows things to go more smoothly.
  - If a technical question arises, you **MUST** notify either the system administrator or a digital project manager. This is especially important when working with external freelancers.
-
 
 # Maintenance
 

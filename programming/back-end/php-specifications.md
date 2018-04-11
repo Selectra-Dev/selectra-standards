@@ -1,12 +1,15 @@
-# Selectra’s back-end specifications
+Selectra’s back-end specifications
+=
+
+## Table of contents
 
 * Framework
 * Server configuration
 * Coding style
 * Comments
 * Deployment
-
-
+    * Workflow
+    * Environment variables
 
 ## Framework
 
@@ -27,16 +30,14 @@ of [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html).
 
 ## Deployment
 
-### Deployement workflow
+### Workflow
 
-  In order to optimize our workflow, our system administrator needs to be able to deploy the project without any knowledge of its inner workings. This means that the code **MUST** be shipped in such a way that it can be built easily using a well-defined procedure. This procedure **MUST** be exhaustively described in a README.md file.
+In order to optimize our workflow, our system administrator needs to be able to deploy the project without any knowledge of its inner workings. This means that the code **MUST** be shipped in such a way that it can be built easily using a well-defined procedure. This procedure **MUST** be exhaustively described in a README.md file.
 
+### Environment variables
 
-### Enrironment variable
+To avoid unnecessary re-deployments, the developer **MUST** make good use of environment variables. Below is a non-exhaustive list of what **MUST** be an environment variable:
+* Data base connection information
+* Api keys
 
-  To avoid unnecessary re-deployments, the developer **MUST** make good use of environment variables. Below is a non-exhaustive list of what **MUST** be an environment variable :
-  * Data base connection information
-  * Api keys
-  * ...
-
-  In any case, the environment variables you used in your project **MUST** be listed int the README.md, along with the purpose they serve.
+In any case, the environment variables you used in your project **MUST** be listed int the README.md, along with the purpose they serve.
