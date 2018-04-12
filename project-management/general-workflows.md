@@ -3,17 +3,17 @@ General Project management workflows
 
 # Table of contents
 
-- Projects
-    - Announce the project
-    - Define the different steps of your project, and who should be a part of it
-    - Write the specifications
-    - Quotations
-    - Design
-    - Kick-off meeting
-    - Development
-- Maintenance
-    - Generalities
-    - Drupal
+* Projects
+    * Announce the project
+    * Define the different steps of your project, and who should be a part of it
+    * Write the specifications
+    * Quotations
+    * Design
+    * Kick-off meeting
+    * Development
+* Maintenance
+    * Generalities
+    * Drupal
 
 # Projects
 
@@ -51,7 +51,7 @@ The specifications are here to explain your vision of the product.
 When writing specifications the first thing to know is: you can't write perfect specifications. Nobody can, especially for a web application. However, the key is to describe your needs in simple terms. Don't try to mix the description of the functionality you want with how to implement them. If you do have technical recommendations to make, it **MUST** be completely independent from the functionality description.
 
 It's strongly **RECOMMENDED** that you follow a pattern resembling this:
-"As a [user] I want to [functionality] so that [business value of the functionality]"
+"As a \[user\] I want to \[functionality\] so that \[business value of the functionality\]"
 
 Specifications **MUST** be validated by the technical staff before being sent to the freelancers.
 

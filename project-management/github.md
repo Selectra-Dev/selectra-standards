@@ -1,7 +1,16 @@
 How we use GitHub for our projects
 =
 
-## Our workflows
+# Table of contents
+
+* Our workflows
+    * Default workflows
+    * Extended workflow
+* Commits
+    * When do I need to commit?
+    * How do I write my commits
+
+# Our workflows
 
 - Default workflows
 - Extended workflows
@@ -12,7 +21,7 @@ The choice of either of these workflows is open to discussion, but **MUST** be m
 
 The chosen workflow **MUST** be one of these two choices. Having consistent use of GitHub across our projects helps preventing mistakes, and makes the developer's work easier.
 
-### Default workflows
+## Default workflows
 
 By default, we simply follow GitHub guidelines:
 - The shared repository on GitHub has one permanent branch: master. The content of this branch **MUST** always be deployable;
@@ -22,13 +31,13 @@ By default, we simply follow GitHub guidelines:
 
 The guidelines can be found [here](https://guides.GitHub.com/introduction/flow/).
 
-### Extended workflow
+## Extended workflow
 
 For some projects, it might be useful to use a more complex workflow. The complete guideline is available [here](http://nvie.com/posts/a-successful-git-branching-model/)
 
-## Commits
+# Commits
 
-### When do I need to commit ?
+## When do I need to commit?
 
 Commits on the public repository **MUST** follow the atomic approach:
 - Commit each fix or task as a separate change
@@ -39,7 +48,7 @@ Commits on the public repository **MUST** follow the atomic approach:
 
 The goal is to be able to easily roll back a specific change, without affecting the others. However, you **SHOULD NOT** commit unstable work. If you need to commit some unstable code to safeguard your work, do it on a local branch, and clean it up before merging to your master branch and pushing to the remote repository. [This article](https://sandofsky.com/blog/git-workflow.html) provides some good guidelines on the subject.
 
-### How do I write my commits
+## How do I write my commits
 
 Here are 7 rules you **MUST** respect when writing a commit:
 - Separate subject from body with a blank line
