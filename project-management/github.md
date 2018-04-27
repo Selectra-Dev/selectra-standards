@@ -19,7 +19,7 @@ By default, we simply follow GitHub guidelines:
 - When the code is ready to be deployed, or when the developer wants to discuss some details concerning new features, he **MUST** create a pull request. He **MUST NOT** merge directly to master;
 - When the team agrees on the changes, the project manager merges the branch into master.
 
-The guidelines can be found [here](https://guides.GitHub.com/introduction/flow/).
+The guidelines for Github Flow can be found [here](https://guides.github.com/introduction/flow/).
 
 ### Extended workflow
 
