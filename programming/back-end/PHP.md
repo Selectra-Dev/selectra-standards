@@ -58,6 +58,7 @@ Laravel good practices and standard are described in details [here](php/LARAVEL.
 
 - Keep composer.json entries in correct order - follow schema [reference](https://getcomposer.org/doc/04-schema.md)
 - Always keep repositories sorted when adding them manually
+- When using external dependencies, explanations **SHOULD** be given and links to documentation **SHOULD** be provided.
 
 # Server configuration
 
@@ -86,3 +87,5 @@ To avoid unnecessary re-deployments, the developer **MUST** make good use of env
 * Api keys
 
 In any case, the environment variables you used in your project **MUST** be listed int the README.md, along with the purpose they serve.
+
+Credentials **MUST NOT** be stored as plain text on the repository (especially production ones). Instead, you **SHOULD** provide an example of configuration file and eventually give instructions on how to create them.

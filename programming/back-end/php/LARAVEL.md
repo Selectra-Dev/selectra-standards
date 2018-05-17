@@ -12,6 +12,7 @@ Laravel and Eloquent good practices and standards
 - Use contracts instead of facades
 - Use controller routes instead of `\Closure`
 - Use form request whenever application is modifying something
+- Use Policies to check if the user is allowed to make modifications
 - Don't use polymorphic relations
 - Separate migrations into multiple files
 - Separate seeders into multiple files 
