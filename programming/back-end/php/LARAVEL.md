@@ -9,13 +9,16 @@ Laravel and Eloquent good practices and standards
 
 # Laravel
 
-- Use contracts instead of facades
-- Use controller routes instead of `\Closure`
-- Use form request whenever application is modifying something
-- Use Policies to check if the user is allowed to make modifications
+- **MUST** use contracts instead of facades
+- **MUST** use controller routes instead of `\Closure`
+- **SHOULD** use form request whenever application is modifying something
+- **SHOULD NOT** use policies to check if the user is allowed to make modifications
 - Don't use polymorphic relations
-- Separate migrations into multiple files
-- Separate seeders into multiple files 
+- **SHOULD** separate migrations into multiple files if they are not related with each other
+
+    This means, you are free to use single migration file if you want to move a column from one table to another. I would prefer to have 1 migration like `move_category_id_from_foo_table_to_bar_table`, rather than 3 migrations like `create_category_id_in_bar_table`, `copy_category_ids_from_foo_table_to_bar_table` and `remove_category_id_from_foo_table`
+    
+- **SHOULD** separate seeders into multiple files 
 - Indicate code completion by documenting available orm property
     ```php
     /**
@@ -40,11 +43,12 @@ Laravel and Eloquent good practices and standards
         ];
     }
     ```
-- **SHOULD** Use `selectra-dev/laravel-deploy` package
+- **SHOULD** use `selectra-dev/laravel-deploy` package
 
 # Eloquent
 
-- **SHOULD** use built in authentication and migration
+- **SHOULD** use built in authentication system
+- **SHOULD** use build in migration system
 - Prefix zoho properties with `zoho_`
 
 # Blade

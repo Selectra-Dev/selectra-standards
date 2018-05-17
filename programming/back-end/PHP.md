@@ -5,7 +5,6 @@ Selectra’s PHP coding standards
 
 * PHP
 * Framework
-    * Drupal
     * Laravel
 * Composer
 * Server configuration
@@ -45,13 +44,9 @@ A framework **MUST** be used for the project, to make for a better code and an e
 
 In Selectra we are using **Drupal** and **Laravel** frameworks. However if the developer is more comfortable working with another framework, it may be possible - pending our CTO's approval. 
 
-## Drupal
-
-@ todo
-
 ## Laravel
 
-Laravel 5 **SHOULD** be used, as most of our applications are built with it.
+The latest **LTS** release of Laravel **MUST** be used. The latest stable release **SHOULD** be used.
 Laravel good practices and standard are described in details [here](php/LARAVEL.md).
 
 # Composer
