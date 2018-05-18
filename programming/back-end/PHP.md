@@ -42,7 +42,7 @@ Selectra’s PHP coding standards
 
 A framework **MUST** be used for the project, to make for a better code and an easier maintenance. 
 
-In Selectra we are using **Drupal** and **Laravel** frameworks. However if the developer is more comfortable working with another framework, it may be possible - pending our CTO's approval. 
+In Selectra we are using **Laravel** framework. However if the developer is more comfortable working with another framework, it may be possible - pending our CTO's approval. 
 
 ## Laravel
 
