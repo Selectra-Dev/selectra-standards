@@ -1,6 +1,16 @@
-# How we use GitHub for our projects
+How we use GitHub for our projects
+=
 
-## Our workflows
+# Table of contents
+
+* Our workflows
+    * Default workflows
+    * Extended workflow
+* Commits
+    * When do I need to commit?
+    * How do I write my commits
+
+# Our workflows
 
 - Default workflows
 - Extended workflows
@@ -11,25 +21,26 @@ The choice of either of these workflows is open to discussion, but **MUST** be m
 
 The chosen workflow **MUST** be one of these two choices. Having consistent use of GitHub across our projects helps preventing mistakes, and makes the developer's work easier.
 
-### Default workflows
+## Default workflows
 
 By default, we simply follow GitHub guidelines:
 - The shared repository on GitHub has one permanent branch: master. The content of this branch **MUST** always be deployable;
 - When working on a new fix or feature, the developer **MUST** create a new branch on the shared repository. It is **RECOMMENDED** that the developer commits and push his work on this branch regularly in order to keep a clean and useful history;
+- When a bug is found on the application, an issue **MUST** be created on GitHub and provide explainations on how to reproduce it. Screenshots **SHOULD** be given as well to help debugging. A developer **MUST** be assigned to the issue in order to fix the bug. Labels **CAN** be provided to help prioritizing the issues. Finally, the commit that fix the bug **MUST** start with "Fix #[ID_OF_THE_ISSUE]:".
 - When the code is ready to be deployed, or when the developer wants to discuss some details concerning new features, he **MUST** create a pull request. He **MUST NOT** merge directly to master;
 - When the team agrees on the changes, the project manager merges the branch into master.
 
 The guidelines for Github Flow can be found [here](https://guides.github.com/introduction/flow/).
 
-### Extended workflow
+## Extended workflow
 
 For some projects, it might be useful to use a more complex workflow. The complete guideline is available [here](http://nvie.com/posts/a-successful-git-branching-model/)
 
-## Commits
+# Commits
 
-### When do I need to commit ?
+## When do I need to commit?
 
-Commits on the public repository **MUST** follow the atomic approach :
+Commits on the public repository **MUST** follow the atomic approach:
 - Commit each fix or task as a separate change
 - Only commit when a block of work is complete
 - Commit each layout change separately
@@ -38,9 +49,9 @@ Commits on the public repository **MUST** follow the atomic approach :
 
 The goal is to be able to easily roll back a specific change, without affecting the others. However, you **SHOULD NOT** commit unstable work. If you need to commit some unstable code to safeguard your work, do it on a local branch, and clean it up before merging to your master branch and pushing to the remote repository. [This article](https://sandofsky.com/blog/git-workflow.html) provides some good guidelines on the subject.
 
-### How do I write my commits
+## How do I write my commits
 
-Here are 7 rules you **MUST** respect when writing a commit :
+Here are 7 rules you **MUST** respect when writing a commit:
 - Separate subject from body with a blank line
 - Limit the subject line to 50 characters
 - Capitalize the subject line
@@ -51,7 +62,7 @@ Here are 7 rules you **MUST** respect when writing a commit :
 
 A good rule of thumb is to check if your commit subject could complete the sentence "If applied, this commit will..."
 
-Ex :
+Ex:
 - `If applied, this commit will changing behavior of X` :x:
 - `If applied, this commit will more fixes for broken stuff` :x:
 - `If applied, this commit will remove deprecated methods` :white_check_mark:
