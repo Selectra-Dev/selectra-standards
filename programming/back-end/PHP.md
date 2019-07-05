@@ -16,6 +16,16 @@ Selectra’s PHP coding standards
 
 # PHP
 
+- Start the PHP class with
+   ```php
+   <?php declare(strict_types=1);
+   ```
+- By default, all classes should be final
+   ```php
+   final class Foo extends Bar implements Bizz
+   {
+   }
+   ```
 - Use single quotes in strings definitions
     ```php
     $foo = 'bar';
