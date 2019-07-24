@@ -1,5 +1,5 @@
-Selectra’s PHP coding standards
-=
+PHP
+===
 
 # Table of contents
 
@@ -16,27 +16,36 @@ Selectra’s PHP coding standards
 
 # PHP
 
-- Use single quotes in strings definitions
+- Use single quotes in strings definitions.
+
     ```php
     $foo = 'bar';
     ```
-- Close last array entry with comma
+    
+- Close last array entry with comma.
+
     ```php
     $foo = [
         'bar' => 'baz',
     ];
     ```
-- Camel case variables
+    
+- Camel case variables.
+
     ```php
     $fooBarBaz = 'qux';
     ```
-- When documenting double-precision/floating-point variable use `float` instead of `double`
+    
+- When documenting double-precision/floating-point variable use `float` instead of `double`.
+
     ```php
     /** @var float $fooBarBaz */
     $fooBarBaz = .5;
     ```
-- Don't use short type hinting names like `bool`, `int` or `str`
-- Have to use `tristanjahier/zoho-crm-php` wrapper whenever connecting to [ZohoCRM](https://crm.zoho.com/) 
+    
+- Don't use short type hinting names like `bool`, `int` or `str`.
+
+- Have to use `tristanjahier/zoho-crm-php` wrapper whenever connecting to [ZohoCRM](https://crm.zoho.com/).
 
 # Framework
 

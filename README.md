@@ -1,20 +1,67 @@
-Selectra standards
-=
+Selectra's Standards
+===
+
+Standardized guidelines for technical members of Selectra.
+
+> This documentation follows the [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) specification.
+
+# Table of contents
+
+1. [Description](#description)
+
+2. [Contributing](#contributing)
+
+    2.1. [Programming](#programming)
+    
+    2.2. [Management](#management)
+    
+    2.3. [Miscellaneous](#miscellaneous)
+    
+3. [Contributing](#contributing)
+
+4. [Support](#support)
 
 # Description
 
-This repository describes the standards we follow to manage and build our applications. This standards **MUST** be followed in every project. This allows us to ensure consistency and easy maintenance across our applications.
+This repository contains Selectra's standards every technical member **MUST** follow when **developing**, **designing** and **maintaining** company's products.
 
-Our specifications are utilizing keywords collections presented in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt), and should be used respectfully, unless it's specified below:
+Such standardization is necessary to conduct successful teamwork and deliver high quality software by ensuring consistency across all of them.
 
-  * **MUST**: This word, or the terms **REQUIRED** or **SHALL**, means that the definition is an absolute requirement of the specification.
+# Contents
 
-  * **MUST NOT**: This phrase, or the phrase **SHALL NOT**, means that the definition is an absolute prohibition of the specification.
+This documentation is separated into two main sections that covers [Programming](#programming) and [Management](#management). 
 
-  * **SHOULD**: This word, or the adjective **RECOMMENDED**, means that there may exist valid reasons in particular circumstances to ignore a particular item, but the full implications must be understood and carefully weighed before choosing a different course.
+There is also auxiliary [Miscellaneous](#miscellaneous) section, that is suitable for general standards.
 
-  * **SHOULD NOT**: This phrase, or the phrase **NOT RECOMMENDED** means that there may exist valid reasons in particular circumstances when the particular behavior is acceptable or even useful, but the full implications should be understood and the case carefully weighed before implementing any behavior described with this label.
+## Programming
+
+Selectra develops and maintains mainly [**PHP**](/programming/PHP.md), [**Ruby**](), [**HTML**](/programming/HTML_AND_CSS.md) and [**JavaScript**]() applications. 
+
+Often they are supplemented with other languages/technologies like [**SQL**](/programming/SQL_AND_MYSQL.md) or [**Docker**]().
+
+All of those languages/technologies have separate file that contains its standards. 
+
+## Management
+
+Management and software maintenance is challenging process and requires unified approach.
+
+The most important aspects of management are [**GitHub**]() and [**Design**]().
+
+## Miscellaneous
+
+Various standardization not suitable for either [Programming](#programming) or [Management](#management).
 
 # Contributing
 
-Any contributions are welcome.
+Such standardization aims to satisfy technical members so all the concerns, misunderstandings and arguments have to be solved with [GitHub Issues](https://github.com/Selectra-Dev/selectra-standards/issues/new). 
+
+Once discusses, please create pull request and refer to suitable issue.
+
+# Support
+
+This document is a **collective** work of all the technical members of Selectra.
+
+- [Developers](https://github.com/orgs/Selectra-Dev/teams/developers)
+- [Ops](https://github.com/orgs/Selectra-Dev/teams/ops)
+- [Project Managers](https://github.com/orgs/Selectra-Dev/teams/project-managers)
+

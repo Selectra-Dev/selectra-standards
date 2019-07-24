@@ -1,5 +1,5 @@
-Selectra’s country codes standards
-=
+Countries and Languages
+===
 
 When using country codes in any situation, one **MUST** follow the following specifications:
 

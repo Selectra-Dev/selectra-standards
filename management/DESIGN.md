@@ -22,11 +22,11 @@ The design phase is done through several iterations. At the end of each iteratio
 
  We use the workflow section of InVision to sort the screens, as shown below:
 
-![workflow section](../resources/images/workflow.png)
+![workflow section](/resources/images/workflow.png)
 
  If some string of comments leads to the decision to make a modification, we **MUST** make a task out of it.
 
-![tasks](../resources/images/tasks.png)
+![tasks](/resources/images/tasks.png)
 
  This way, we can easily track the progress of the project. 
 
@@ -34,4 +34,4 @@ The design phase is done through several iterations. At the end of each iteratio
 
 At the beginning of the project, we set up an InVision integration to send updates directly into the related Slack channel. This way everybody knows the project's advancement and what they have to do, without even leaving Slack!
 
-![slack](../resources/images/invisionInSlack.png)
+![slack](/resources/images/invisionInSlack.png)
