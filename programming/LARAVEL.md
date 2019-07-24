@@ -9,12 +9,18 @@ Laravel and Eloquent good practices and standards
 
 # Laravel
 
-- **MUST** use contracts instead of facades
-- **MUST** use controller routes instead of `\Closure`
-- **SHOULD** use form request whenever application is modifying something
-- **SHOULD NOT** use policies to check if the user is allowed to make modifications
-- Don't use polymorphic relations
-- **SHOULD** separate migrations into multiple files if they are not related with each other
+ **MUST** use contracts instead of facades.
+
+ **MUST** use controller routes instead of `\Closure`.
+
+ **SHOULD** use form request whenever application is modifying something.
+
+ **SHOULD NOT** use policies to check if the user is allowed to make modifications.
+
+ Don't use polymorphic relations.
+
+ **SHOULD** separate migrations into multiple files if they are not related with each other.
+
 
     For example, in the case of moving a column from one table to another, it is always preferable to have 1 migration like `move_category_id_from_foo_table_to_bar_table`, rather than 3 migrations like `create_category_id_in_bar_table`, `copy_category_ids_from_foo_table_to_bar_table` and `remove_category_id_from_foo_table`.
 

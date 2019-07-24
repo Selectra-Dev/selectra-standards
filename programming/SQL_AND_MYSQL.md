@@ -15,7 +15,7 @@ SQL and MySQL
 
 - Table property names for foreign keys **SHOULD** be singular.
 
-    > Instead of having for example `post.user_id`, make it `post.user`. It's obvious it links to users primary key (which is almost always `id`).
+    > Instead of having for example `posts.user_id`, make it `posts.user`. It's obvious it links to users primary key (which is almost always `id`).
 
 # User permissions
 

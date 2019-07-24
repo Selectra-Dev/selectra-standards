@@ -1,7 +1,7 @@
-Selectra’s HTML/CSS specifications
-=
+HTML and CSS
+===
 
-## Table of contents
+# Table of contents
 
 * Technical specifications
   * Design System
@@ -14,9 +14,9 @@ Selectra’s HTML/CSS specifications
   * Common files
   * Menu/footer
 
-## Technical specifications
+# Technical specifications
 
-### Design System
+## Design System
 
 The whole process **MUST** be based on **Design system** rules:
 
@@ -27,11 +27,11 @@ The whole process **MUST** be based on **Design system** rules:
 * Where **Templates** are a combination of two or more basics to achieve complex tasks like a list of offer card with his sort fields…
 * Where **Features** are a whole combination of templates which allows you to achieve your goal (different tasks).
 
-### Editor
+## Editor
 
 The developer **MUST** use our **[.editorconfig](http://editorconfig.org/)** file.
 
-### HTML
+## HTML
 
 HTML files **MUST** follow these rules:
 
@@ -42,7 +42,7 @@ HTML files **MUST** follow these rules:
 * **SHOULD** be commented if the developer feels it's necessary. (Use of unusual techniques for instance).
 * **No duplication allowed**: a module **MUST** uses mobile first approach
 
-### CSS
+## CSS
 
 CSS files **MUST** these rules:
 
@@ -53,11 +53,11 @@ CSS files **MUST** these rules:
 * **MUST be compliant on all modern browsers including IE11**
 * **No duplication allowed**: a module **MUST** uses mobile first approach
 
-### Deployment
+## Deployment
 
 In order to optimize our workflow, our system administrator needs to be able to deploy the project without any knowledge of its inner workings. It means that the code **MUST** be shipped in such a way that it can be built easily using a well defined procedure. This procedure **MUST** be exhaustively described in a README.md file.
 
-## Icons & Images
+# Icons & Images
 
 Icons **MUST** follow these rules:
 
@@ -71,12 +71,12 @@ Images **MUST** follow these rules:
 * **PNG** format, **compressed/optimized** with a tool like tinypng.
 * For **mobile, @2x/@3x** export
 
-## Useful links
+# Useful links
 
-### Common files
+## Common files
 
 There is common files to use in our repo called [selectra-common-files](https://bitbucket.org/elrogue/selectra-common-files)
 
-### Menu/footer/cookie compliance/user rating/ekomi
+## Menu/footer/cookie compliance/user rating/ekomi
 
 There is a repo where you can get our menu, footer... called [selectra-app-config](https://bitbucket.org/elrogue/selectra-app-config)

@@ -1,5 +1,5 @@
-General Project management workflows
-=
+General Workflow
+===
 
 # Table of contents
 

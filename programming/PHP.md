@@ -3,18 +3,30 @@ PHP
 
 # Table of contents
 
-* PHP
-* Framework
-    * Laravel
-* Composer
-* Server configuration
-* Coding style
-* Comments
-* Deployment
-    * Workflow
-    * Environment variables
+1. PHP
+
+    1.1. Comments
+
+2. Composer
+
+3. Framework
+
+    3.1. Laravel
+
+4. Server configuration
+
+5. Coding style
+
+7. Deployment
+
+    7.1. Workflow
+
+    7.2. Environment variables
 
 # PHP
+
+## Variable names and declarations
+
 
 - Use single quotes in strings definitions.
 
@@ -22,7 +34,7 @@ PHP
     $foo = 'bar';
     ```
     
-- Close last array entry with comma.
+- Put trailing comma after last array element (unless array is inline).
 
     ```php
     $foo = [
@@ -30,22 +42,32 @@ PHP
     ];
     ```
     
-- Camel case variables.
+- Use `camelCase`.
+
+    ```php
+    function fooBarBaz() {}
+    ```
+    
+## Function names and declarations
+
+- Use `camelCase`.
 
     ```php
     $fooBarBaz = 'qux';
     ```
-    
-- When documenting double-precision/floating-point variable use `float` instead of `double`.
+
+## Documentation
+
+- Use short type hinting names like `bool`, `int` or `str` instead of `boolean`, `integer`, `string`.
+
+- When documenting floating-point variable use `float` instead of `double`.
 
     ```php
     /** @var float $fooBarBaz */
     $fooBarBaz = .5;
     ```
-    
-- Don't use short type hinting names like `bool`, `int` or `str`.
 
-- Have to use `tristanjahier/zoho-crm-php` wrapper whenever connecting to [ZohoCRM](https://crm.zoho.com/).
+    > Float is type. `double` is alias to `float` ([reference](https://www.php.net/manual/en/language.types.php)).
 
 # Framework
 
@@ -63,6 +85,7 @@ Laravel good practices and standard are described in details [here](php/LARAVEL.
 - Keep composer.json entries in correct order - follow schema [reference](https://getcomposer.org/doc/04-schema.md)
 - Always keep repositories sorted when adding them manually
 - When using external dependencies, explanations **SHOULD** be given and links to documentation **SHOULD** be provided.
+- Have to use `tristanjahier/zoho-crm-php` wrapper whenever connecting to [ZohoCRM](https://crm.zoho.com/).
 
 # Server configuration
 

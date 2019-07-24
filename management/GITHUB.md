@@ -1,5 +1,5 @@
-How we use GitHub for our projects
-=
+GitHub
+===
 
 # Table of contents
 
