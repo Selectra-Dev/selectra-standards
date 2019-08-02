@@ -1,12 +1,12 @@
 Drupal 8 good practices, standards and resources
-==
+=
 
 # Table of contents
 
-* General information
-* Standards
-* Good practices
-* IDE configuration
+1. General information
+2. Standards
+3. Good practices
+4. IDE configuration
 
 # General information
 
