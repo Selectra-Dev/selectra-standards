@@ -1,9 +1,9 @@
 Selectra's Standards
-===
+=
 
 Standardized guidelines for technical members of Selectra.
 
-> This documentation follows the [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) specification.
+> This documentation follows the [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt) specification (it describes keywords like **MUST** or **MUST NOT**).
 
 # Table of contents
 

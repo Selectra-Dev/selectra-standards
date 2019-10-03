@@ -1,11 +1,19 @@
 Communication during the design phase
-===
+=
 
-During the design phase of our projects, we use two softwares to allow the designers and the stake holders to communicate: **Invision** and **Slack**.
+During the design phase of our projects, we use two softwares to allow the designers and the stake holders to communicate: **InVision** and **Slack**.
 
-**Invision** is a great tool to create prototypes, as it allows the team to give their feedback directly on the screen.
+**InVision** is a great tool to create prototypes, as it allows the team to give their feedback directly on the screen.
 
 We use **Slack** for any other discussion related to the project - provided this is not a direct feedback on the prototype (in such a case we would use InVision).
+
+# Table of contents
+
+1. [Project set up](#project-set-up)
+
+2. [InVision](#invision)
+
+3. [Slack](#slack)
 
 # Project set up
 
@@ -24,11 +32,11 @@ The design phase is done through several iterations. At the end of each iteratio
 
 ![workflow section](/resources/images/workflow.png)
 
- If some string of comments leads to the decision to make a modification, we **MUST** make a task out of it.
+If some string of comments leads to the decision to make a modification, we **MUST** make a task out of it.
 
 ![tasks](/resources/images/tasks.png)
 
- This way, we can easily track the progress of the project. 
+This way, we can easily track the progress of the project. 
 
 # Slack
 

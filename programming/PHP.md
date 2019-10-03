@@ -1,5 +1,5 @@
 PHP
-===
+=
 
 This document indicates the standards we follow during PHP project development. 
 
@@ -112,9 +112,6 @@ In any case, the environment variables you used in your project **MUST** be list
 
 Credentials **MUST NOT** be stored as plain text on the repository (especially production ones). Instead, you **SHOULD** provide an example of configuration file and eventually give instructions on how to create them.
 
-
-
-
 # Framework
 
 A framework **MUST** be used for the project, to make for a better code and an easier maintenance. 
@@ -129,4 +126,3 @@ Laravel good practices and standard are described in details [here](php/LARAVEL.
 # Server configuration
 
 PHP >= 5.6 **MUST** be used. Ideally, PHP7 **SHOULD** be used.
-

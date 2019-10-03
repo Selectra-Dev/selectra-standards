@@ -1,5 +1,5 @@
 SQL and MySQL
-===
+=
 
 # Table of contents
 

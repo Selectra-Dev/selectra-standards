@@ -1,19 +1,21 @@
 GitHub
-===
+=
 
 # Table of contents
 
-* Our workflows
-    * Default workflows
-    * Extended workflow
-* Commits
-    * When do I need to commit?
-    * How do I write my commits
+1. [Our workflows](#our-workflows)
+
+    1.1. [Default workflows](#default-workflows)
+    
+    1.2. [Extended workflow](#extended-workflows)
+    
+2. [Commits](#commits)
+
+    2.1. [When do I need to commit?](#when-do-i-need-to-commit)
+   
+    2.2. [How do I write my commits](#how-do-i-write-my-commits)
 
 # Our workflows
-
-- Default workflows
-- Extended workflows
 
 We use two different types of workflow depending on the project size. For most of our projects, we stick to the one we refer to as "Default workflows". However, for bigger projects, we might opt for the extended one.
 
