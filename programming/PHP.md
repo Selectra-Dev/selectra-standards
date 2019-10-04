@@ -97,7 +97,21 @@ Composer is a PHP package manager we use in every project its considered as inse
 
 # Comments
 
-- The code **SHOULD** be commented if the developers feels this is necessary. If the developer does choose to use comments in his code, the comments **MUST** follow the specifications of [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html).
+- **MUST** follow the specifications of [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html)
+
+- **MUST NOT** comment self-explanatory methods
+
+    > Functions like getters and setters are obvious and don't need any explanations. 
+    > Please also double-check its implementation in such situation. It might be badly designed. 
+
+- **SHOULD NOT** contain PhpDoc's when arguments and return type are self explicitly defined
+
+    > They are optional for methods like `public function foo(string $bar): \baz;`
+
+- **MUST** contain PhpDocs's when arguments and return type aren't explicitly defined
+
+    > They are mandatory for arguments like `/** @param string|int $foo */`.
+    > Please also double-check its implementation in such situation. It might be badly designed.   
 
 # Deployment
 
