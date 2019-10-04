@@ -35,6 +35,8 @@ Laravel and Eloquent good practices and standards
 
 - **SHOULD** use `selectra-dev/laravel-deploy` package
 
+- **MUST NOT** use aliases in Laravel packages and portable code
+
 # Eloquent
 
 - **SHOULD** use built-in authentication system
