@@ -9,13 +9,21 @@ SQL and MySQL
 
 # Naming convention
 
-- All databases, tables and table properties **SHOULD** follow *snake_case* naming convention
+- All databases, tables and table properties **MUST** follow `snake_case` naming convention
 
-- Table names **SHOULD** be plural
+- Table names **MUST** be plural
 
-- Table property names for foreign keys **SHOULD** be singular
+- Table property names for foreign keys **SHOULD** be singular and without obvious `id``suffix
 
-    > Instead of having for example `posts.user_id`, make it `posts.user`. It's obvious it links to users primary key (which is almost always `id`).
+    > Instead of having for example `posts.user_id`, make it `posts.user`. It's obvious it links to users primary key (which is always `id`).
+
+- Withing the same database, when using the same property names for different meanings, you **MUST** call them differently
+
+    > For example, `offers.phone` (being stationary or mobile) and `contact.phone` (being contact's phone number) should be `offers.phone_type` and `contact.phone_number`.
+
+- **MUST** be verbose
+
+    > For example instead of `phone_num` (quantity or number?) use `phone_number`.
 
 # User permissions
 
