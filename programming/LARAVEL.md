@@ -37,6 +37,10 @@ Laravel and Eloquent good practices and standards
 
 - **MUST NOT** use aliases in Laravel packages and portable code
 
+- **MUST** name Traits in passive voice
+
+    > For example CompilesLoops.
+
 # Eloquent
 
 - **SHOULD** use built-in authentication system
