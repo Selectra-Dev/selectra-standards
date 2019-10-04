@@ -1,16 +1,16 @@
-PHP
+PHP Hypertext Preprocessor
 =
 
-This document indicates the standards we follow during PHP project development. 
+This document indicates the standards we follow during PHP project development.
 
 It consists of **naming conventions**, **architecture patterns**, **style guidelines** and **good practices**.
 
 # Table of contents
 
 1. [Variables](#variables)
-  
+
 2. [Functions](#functions)
-  
+
 3. [Documentation](#documentation)
 
 4. [Style](#style)
@@ -23,78 +23,81 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
 
 # Variables
 
-- Use single quotes in strings definitions.
+- **MUST** use single quotes for strings
 
     ```php
     $foo = 'bar';
     ```
 
-    > When a string is compound it's more convenient to use sprintf or [output buffering](https://www.php.net/manual/en/book.outcontrol.php).
-    
-- Put trailing comma after last array element (however inline array like `$foo = ['bar' => 'baz']` is correct).
+    > When a string is compound it's more convenient to use `sprintf` or [output buffering](https://www.php.net/manual/en/book.outcontrol.php).
+
+- **MUST** put trailing comma after last array element
 
     ```php
     $foo = [
         'bar' => 'baz',
     ];
     ```
-    
-- Use `camelCase`.
+  > Inline arrays, like `$foo = ['bar' => 'baz']`, are correct (they seem to be __prettier__ without comma).
 
-    ```php
-    function fooBarBaz() {}
-    ```
-    
-# Functions
-
-- Use `camelCase`.
+- **MUST** use `camelCase`
 
     ```php
     $fooBarBaz = 'qux';
     ```
 
+# Functions
+
+- **MUST** use `camelCase`
+
+    ```php
+    function fooBarBaz() {}
+    ```
+
 # Documentation
 
-- Use short name type hinting names like `bool`, `int` or `str` instead of `boolean`, `integer`, `string`.
+- **MUST** use short name type hinting names like `bool`, `int` or `str` instead of `boolean`, `integer`, `string`
 
-- When documenting floating-point variable use `float` instead of `double`.
+    > Using long type names creates unnecessary overhead. Use reserved keywords.
+
+- **MUST** use `float` instead of `double` when documenting floating-point variable
 
     ```php
     /** @var float $fooBarBaz */
     $fooBarBaz = .5;
     ```
 
-    > Float is type. `double` is alias to `float` ([reference](https://www.php.net/manual/en/language.types.php)).
+    > `float` is a type and `double` is [alias](https://www.php.net/manual/en/language.types.php) to `float`.
 
 # Style
 
-The developer **MUST** follow the [PSR-1](http://www.php-fig.org/psr/psr-1/) and [PSR-2](http://www.php-fig.org/psr/psr-2/) specifications in order to facilitate maintenance.
+- The developer **MUST** follow the [PSR-1](http://www.php-fig.org/psr/psr-1/) and [PSR-2](http://www.php-fig.org/psr/psr-2/) specifications in order to facilitate maintenance
 
-Ideally developer **SHOULD** use CodeSniffer with our internal [configuration](https://github.com/Selectra-Dev/code-sniffer).
+- Ideally developer **SHOULD** use CodeSniffer with our internal [configuration](https://github.com/Selectra-Dev/code-sniffer)
 
 # Composer
 
-Composer is a PHP package manager we use in every project its considered as inseparable part of PHP standards. 
+Composer is a PHP package manager we use in every project its considered as inseparable part of PHP standards.
 
-- Keep `composer.json` configuration properties in the official order
- 
-    - Follow the [official schema](https://getcomposer.org/doc/04-schema.md).
-    
-- Keep dependencies in the alphabetical order.
+- **MUST** keep `composer.json` configuration properties in the official order
 
-- Always keep repositories sorted when adding them manually.
+    > Follow the [official schema](https://getcomposer.org/doc/04-schema.md).
 
-- When using external dependencies, explanations **SHOULD** be given and links to documentation **SHOULD** be provided.
+- **MUST** keep dependencies (`require` and `require-dev`) in the alphabetical order
 
-- Have to use `tristanjahier/zoho-crm-php` wrapper whenever connecting to [ZohoCRM](https://crm.zoho.com/).
+    > This is automated by `sort-packages` configuration option. If you're editing `composer.json` manually, please remember about the order.
+
+- **MUST** keep private repositories (`repositories`) in alphabetical order
+
+- **MUST** use [Tristan's wrapper](https://github.com/Selectra-Dev/tristanjahier/zoho-crm-php) whenever connecting to [ZohoCRM](https://crm.zoho.com/)
+
+- **MUST** keep `authors` updated
+
+    > Minimal necessary details are `name`, `email` and `role`.
 
 # Comments
 
-The code **SHOULD** be commented if the developers feels this is necessary. If the developer does choose to use comments in his code, the comments **MUST** follow the specifications of [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html).
-
-
-
-
+- The code **SHOULD** be commented if the developers feels this is necessary. If the developer does choose to use comments in his code, the comments **MUST** follow the specifications of [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html).
 
 # Deployment
 
@@ -114,15 +117,16 @@ Credentials **MUST NOT** be stored as plain text on the repository (especially p
 
 # Framework
 
-A framework **MUST** be used for the project, to make for a better code and an easier maintenance. 
+- A framework **MUST** be used for the project, to make for a better code and an easier maintenance
 
-In Selectra we are using **Laravel** framework. However if the developer is more comfortable working with another framework, it may be possible - pending our CTO's approval. 
+- In Selectra we are using **Laravel** framework. However if the developer is more comfortable working with another framework, it may be possible - pending our CTO's approval
 
 ## Laravel
 
-The latest **LTS** release of Laravel **MUST** be used. The latest stable release **SHOULD** be used.
-Laravel good practices and standard are described in details [here](php/LARAVEL.md).
+- The latest **LTS** release of Laravel **MUST** be used. The latest stable release **SHOULD** be used
+
+    > Laravel good practices and standard are described in details [here](php/LARAVEL.md).
 
 # Server configuration
 
-PHP >= 5.6 **MUST** be used. Ideally, PHP7 **SHOULD** be used.
+- **MUST** use PHP 7.

@@ -6,23 +6,23 @@ General Workflow
 1. [Projects](#projects)
 
     1.1. [Announce the project](#announce-the-project)
-    
+
     1.2. [Define the different steps of your project, and who should be a part of it](#define-the-different-steps-of-your-project-and-who-should-be-a-part-of-it)
-    
+
     1.3. [Write the specifications](#write-the-specifications)
-    
+
     1.4. [Quotations](#quotations)
-    
+
     1.5. [Design](#design)
-    
+
     1.6. [Kick-off meeting](#kick-off-meeting)
-    
+
     1.7. [Development](#development)
-    
+
 2. [Maintenance](#maintenance)
-    
+
     2.1. [Generalities](#generalities)
-    
+
     2.2. [Drupal](#drupal)
 
 # Projects

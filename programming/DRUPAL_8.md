@@ -45,7 +45,6 @@ However, code in current versions should follow the current standards.
 
 - [SQL coding conventions](https://www.drupal.org/docs/develop/standards/sql-coding-conventions)
 
-
 # Good practices
 
 Drupal has some good practices. We'll add those in that point:

@@ -6,7 +6,7 @@ This file aim to describe how we sue basecamp to manage our projects, we'll cove
 
 ## Starting a new project
 
-Once a new project has been validated by the committee, a Basecamp project is created by the project manager in charge. Each new project is created from the same template. 
+Once a new project has been validated by the committee, a Basecamp project is created by the project manager in charge. Each new project is created from the same template.
 
 The project manager will add members to the Basecamp project and will share a public link allowing everyone who's interested to join the project.
 
@@ -31,8 +31,7 @@ In return, the Project Manager will post a BurnDown chart, aiming at visualizing
 
 - In the Docs & File section, we'll post any documention linked to the project. We'll also reference external resources : a simple bullet list as shown below should do the trick :
 
-![Resources](img/Resources.png)
-
+![Resources](images/basecamp-resources.png)
 
 ### Asynchronous discussion
 

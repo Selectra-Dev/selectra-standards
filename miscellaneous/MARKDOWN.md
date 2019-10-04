@@ -11,30 +11,38 @@ This document contains the common standards for all the [markdown](https://darin
 
 # Naming convention
 
-- **MUST** use `UPPERCASE` file names.
+- **MUST** use `UPPERCASE` file names
 
     > They're easier to find among other files in the directory tree.
 
-- **MUST** use underscores (`_`) to separate words in the file name.
+- **MUST** use underscores (`_`) to separate words in the file name
 
     > Improves readability.
 
 # Contents
 
-- **MUST** begin document with its title - use **single** equal sign (`=`).
+- **MUST** begin document with its title - use **single** equal sign (`=`)
 
-    > Most of the times it's humanized name (without underscores), but sometimes might contain a brief description.
+    > Most of the times it's humanized file name (without underscores), but sometimes might be extended abbreviation (for example file name is `PHP.md` but the title is `PHP Hypertext Preprocessor`).
 
-- **SHOULD** contain brief description under the title.
+- **SHOULD** contain brief description under the title
 
-    > It should be a indication what reader can find in it.
+    > It's used to indicate what reader can find in it.
 
-- **SHOULD** contain `TOC` (_table of contents_).
+- **SHOULD** contain `TOC` (_table of contents_)
 
-    > Sometimes, document isn't typical documentation or doesn't contain more than one chapter. In such case TOC can be skipped.
+    > Sometimes, document isn't typical documentation or doesn't contain more than one chapter. In such case `TOC` can be skipped.
 
-- **MUST NOT** contain any trailing spaces.
+- **MUST NOT** contain any trailing spaces
 
-- Every sentence **MUST** be ended with comma (`.`).
+    > It might be useful to use regular expression replacement in shell by running `sed -i -r 's/\ {1,}$//' FILE.md`.
 
-- Titles and list items **MUST NOT** be ended with comma (`.`).
+- Every sentence **MUST** be ended with comma (`.`)
+
+- Titles and list items **MUST NOT** be ended with comma (`.`)
+
+- **MUST** use numbers (ended with comma, for example `1.` or `1.1.`) or hyphen-minus (`-`)
+
+    > Preferably, they shouldn't mix.
+
+- **MUST** end with a **single** blank line
