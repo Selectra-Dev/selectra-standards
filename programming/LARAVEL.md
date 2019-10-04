@@ -7,7 +7,9 @@ Laravel and Eloquent good practices and standards
 
 2. [Eloquent](#eloquent)
 
-3. [Blade](#blade)
+3. [Migrations](#migrations)
+
+4. [Blade](#blade)
 
 # Laravel
 
@@ -49,7 +51,7 @@ Laravel and Eloquent good practices and standards
 
 # Migrations
 
-- **MUST NOT** implement no-create migrations in pre-release phase.
+- **MUST NOT** implement no-create migrations in pre-release phase
 
     > If application is not deployed on production (meaning database is always re-created) don't create altering migrations but adjust **creating table** migration.
 
