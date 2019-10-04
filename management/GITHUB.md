@@ -1,19 +1,21 @@
-How we use GitHub for our projects
+GitHub
 =
 
 # Table of contents
 
-* Our workflows
-    * Default workflows
-    * Extended workflow
-* Commits
-    * When do I need to commit?
-    * How do I write my commits
+1. [Our workflows](#our-workflows)
+
+    1.1. [Default workflows](#default-workflows)
+
+    1.2. [Extended workflow](#extended-workflows)
+
+2. [Commits](#commits)
+
+    2.1. [When do I need to commit?](#when-do-i-need-to-commit)
+
+    2.2. [How do I write my commits](#how-do-i-write-my-commits)
 
 # Our workflows
-
-- Default workflows
-- Extended workflows
 
 We use two different types of workflow depending on the project size. For most of our projects, we stick to the one we refer to as "Default workflows". However, for bigger projects, we might opt for the extended one.
 
@@ -45,7 +47,6 @@ Commits on the public repository **MUST** follow the atomic approach:
 - Only commit when a block of work is complete
 - Commit each layout change separately
 - Joint commit for layout file, code behind file, and additional resources
-
 
 The goal is to be able to easily roll back a specific change, without affecting the others. However, you **SHOULD NOT** commit unstable work. If you need to commit some unstable code to safeguard your work, do it on a local branch, and clean it up before merging to your master branch and pushing to the remote repository. [This article](https://sandofsky.com/blog/git-workflow.html) provides some good guidelines on the subject.
 

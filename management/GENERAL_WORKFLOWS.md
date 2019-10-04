@@ -1,32 +1,42 @@
-General Project management workflows
+General Workflow
 =
 
 # Table of contents
 
-* Projects
-    * Announce the project
-    * Define the different steps of your project, and who should be a part of it
-    * Write the specifications
-    * Quotations
-    * Design
-    * Kick-off meeting
-    * Development
-* Maintenance
-    * Generalities
-    * Drupal
+1. [Projects](#projects)
+
+    1.1. [Announce the project](#announce-the-project)
+
+    1.2. [Define the different steps of your project, and who should be a part of it](#define-the-different-steps-of-your-project-and-who-should-be-a-part-of-it)
+
+    1.3. [Write the specifications](#write-the-specifications)
+
+    1.4. [Quotations](#quotations)
+
+    1.5. [Design](#design)
+
+    1.6. [Kick-off meeting](#kick-off-meeting)
+
+    1.7. [Development](#development)
+
+2. [Maintenance](#maintenance)
+
+    2.1. [Generalities](#generalities)
+
+    2.2. [Drupal](#drupal)
 
 # Projects
 
-  In order to build a reliable technical infrastructure, improve development time and reduce maintenance cost, it is essential that every project follows precise workflows. Therefore, when starting a new project, you **MUST** follow the following steps:
+In order to build a reliable technical infrastructure, improve development time and reduce maintenance cost, it is essential that every project follows precise workflows. Therefore, when starting a new project, you **MUST** follow the following steps:
 
-## 1. Announce the project
+## Announce the project
 
 The technical staff must be aware of the very existence of the project from the start. To that end, as soon as you start working on a new project you **MUST**:
  - Create a new card on [this board](https://trello.com/b/EI6byZd7). This card should provide a bird view of the project state. Here's what it **MUST** contain: [What should I put in a card?](https://trello.com/c/TiFmB8VC).
  - Announce it on #project: a quick message mentioning the new project will do! And don't forget to add a link to the corresponding trello card.
  - Create a new slack channel: #project-$nameOfYourProject
 
-## 2. Define the different steps of your project, and who should be a part of it
+## Define the different steps of your project, and who should be a part of it
 
 "Do I need a design? Should I include a design for the back office?",
 "Do I need an integration?",
@@ -45,7 +55,7 @@ For a project from scratch, here's the overall team:
 - *System administrator*: who will be responsible for deploying the projects and defining technical constraints. (WARNING don't feed the system administrator after midnight)
 - *Project manager*: if you don't know who that is you probably **SHOULD NOT** be reading this
 
-## 3. Write the specifications
+## Write the specifications
 
 The specifications are here to explain your vision of the product.
 When writing specifications the first thing to know is: you can't write perfect specifications. Nobody can, especially for a web application. However, the key is to describe your needs in simple terms. Don't try to mix the description of the functionality you want with how to implement them. If you do have technical recommendations to make, it **MUST** be completely independent from the functionality description.
@@ -55,19 +65,19 @@ It's strongly **RECOMMENDED** that you follow a pattern resembling this:
 
 Specifications **MUST** be validated by the technical staff before being sent to the freelancers.
 
-## 4. Quotations
+## Quotations
 
 If you call on freelancers for this project. you **MUST** ask for all the quotations before going to the next step. Quotations **MUST** be validated by the technical staff and the stake holders.
 
-## 5. Design
+## Design
 
 If you need a design for the project, you **MUST** follow the workflow defined in `design.md`
 
-## 6. Kick-off meeting
+## Kick-off meeting
 
 Before launching **any** development whatsoever you **MUST** organize a kick-off meeting with every member of the team. This meeting is essential to the development phase. This way, the developers and the sysadmin can discuss the implementation of our standards and other technical concerns.
 
-## 7. Development
+## Development
 
 Project management methods are currently being studied - in the meantime here are some general recommendations:
  - You **SHOULD NOT** keep the Front-End team and the Back-End team separated, as it could be the source of lots of technical problems. It's better to have both teams work on the same functionality at the same time: it allows things to go more smoothly.
