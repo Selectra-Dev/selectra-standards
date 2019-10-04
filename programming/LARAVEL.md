@@ -49,7 +49,7 @@ Laravel and Eloquent good practices and standards
 
 # Blade
 
-- Use translation directive everywhere, even if there is no translation for that sentence yet
+- **MUST** use translation directive everywhere, even if there is no translation for that sentence yet or application is not shipped internationally
 
     ```blade
     @lang('Lipsum ipsum dolor sit amet')
