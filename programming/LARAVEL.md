@@ -15,7 +15,7 @@ Laravel and Eloquent good practices and standards
 
 - **SHOULD** use contracts instead of facades
 
-    > Facades are really nice feature but they encourage developers to build complex and unmaintainable code. Having dependencies injected explicitly we gain more control over our code. 
+    > Facades are really nice feature but they encourage developers to build complex and unmaintainable code. Having dependencies injected explicitly we gain more control over our code.
 
 - **MUST** use controller routes instead of closures
 
@@ -25,7 +25,7 @@ Laravel and Eloquent good practices and standards
 
 - **SHOULD NOT** use polymorphic relations
 
-    > They're not using indexes. Please rethink twice before creating such relation. 
+    > They're not using indexes. Please rethink twice before creating such relation.
 
 - **SHOULD** separate migrations into multiple files if they are not related with each other
 
@@ -69,7 +69,7 @@ Laravel and Eloquent good practices and standards
 
 - **Updating table** migration **MUST** contain proper class documentation briefly listing what changes are done
 
-    > Don't make other developers review the `up` and `down` methods code. 
+    > Don't make other developers review the `up` and `down` methods code.
 
 - **SHOULD** create independent migrations for each column
 
