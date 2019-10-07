@@ -1,4 +1,4 @@
-Selectra's Standards
+Selectra's standards
 =
 
 Standardized guidelines for technical members of Selectra.
