@@ -21,9 +21,9 @@ GitHub
 
 - **SHOULD** kebab-case for repository name
 
-    > If it's technically impossible, use snake_case.  
+    > If it's technically impossible, use snake_case.
 
-- API Client repository **MUST** consist of programming language name and follow [`api-{language}-client-{name}`](https://github.com/Selectra-Dev?utf8=✓&q=*-api-*-client) pattern 
+- API Client repository **MUST** consist of programming language name and follow [`api-{language}-client-{name}`](https://github.com/Selectra-Dev?utf8=✓&q=*-api-*-client) pattern
 
     > Most of the libraries we create [aren't SDK's](https://github.com/Selectra-Dev/standards/issues/8). If they're containing integration tools (like debugger's, helpers or view generators), you can consider them SDK and call repository `sdk-{language}-{name}`.
 

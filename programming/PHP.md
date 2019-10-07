@@ -22,7 +22,7 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
     5.1. [Workflow](#workflow)
 
     5.2. [Environment variables](#environment-variables)
-     
+
 6. [Frameworks](#frameworks)
 
     6.1. [Laravel](#laravel)
@@ -61,7 +61,7 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
         'bar' => 'baz',
     ];
     ```
-  
+
   > Inline arrays, like `$foo = ['bar' => 'baz']`, are correct (they seem to be __prettier__ without comma).
 
 # Comments and code documentation
@@ -70,8 +70,8 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
 
 - **MUST NOT** comment self-explanatory methods
 
-    > Functions like getters and setters are obvious and don't need any explanations. 
-    > Please also double-check its implementation in such situation. It might be badly designed. 
+    > Functions like getters and setters are obvious and don't need any explanations.
+    > Please also double-check its implementation in such situation. It might be badly designed.
 
 - **SHOULD NOT** contain PhpDoc's when arguments and return type are self explicitly defined
 
@@ -80,7 +80,7 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
 - **MUST** contain PhpDocs's when arguments and return type aren't explicitly defined
 
     > They are mandatory for arguments like `/** @param string|int $foo */`.
-    > Please also double-check its implementation in such situation. It might be badly designed.   
+    > Please also double-check its implementation in such situation. It might be badly designed.
 
 - **MUST** use short name type hinting names like `bool`, `int` or `str` instead of `boolean`, `integer`, `string`
 
@@ -97,7 +97,7 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
 
 # Composer
 
-[Composer](https://getcomposer.org) is a PHP package manager used in modern PHP development. 
+[Composer](https://getcomposer.org) is a PHP package manager used in modern PHP development.
 
 > We don't ship any PHP without it so it's considered as inseparable part of PHP standards.
 

@@ -59,7 +59,7 @@ Various standardization not suitable for either [**Programming**](#programming) 
 
 # Contributing
 
-Such standardization aims to satisfy all the technical members. 
+Such standardization aims to satisfy all the technical members.
 
 Any concerns, misunderstandings and arguments have to be discussed through [GitHub Issues](https://github.com/Selectra-Dev/selectra-standards/issues/new) supplemented by provided [issue templates](.github/ISSUE_TEMPLATE).
 
