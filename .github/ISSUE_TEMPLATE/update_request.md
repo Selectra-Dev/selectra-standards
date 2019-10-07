@@ -1,6 +1,6 @@
 ---
 name: Update request
-about: Creating new standard or removing old one
+about: Create or remove given standard
 title: ''
 labels: enhancement
 assignees: ''
