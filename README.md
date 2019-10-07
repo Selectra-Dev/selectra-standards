@@ -59,11 +59,13 @@ Various standardization not suitable for either [Programming](#programming) or [
 
 # Contributing
 
-Such standardization aims to satisfy all the technical members. Any concerns, misunderstandings and arguments have to be discussed through [GitHub Issues](https://github.com/Selectra-Dev/selectra-standards/issues/new).
+Such standardization aims to satisfy all the technical members. 
+
+Any concerns, misunderstandings and arguments have to be discussed through [GitHub Issues](https://github.com/Selectra-Dev/selectra-standards/issues/new) supplemented by provided [issue templates](.github/ISSUE_TEMPLATE).
 
 > If one problem was raised more than once it deserves to be mentioned in this documentation.
 
-Once discussed, please create a new pull request using provided templates.
+Once discussed, please create a new pull request using provided [pull request templates](.github/ISSUE_TEMPLATE).
 
 # Support
 

@@ -1,5 +1,5 @@
 ---
-name: Update request
+name: Update proposal
 about: Create or remove given standard
 title: ''
 labels: enhancement

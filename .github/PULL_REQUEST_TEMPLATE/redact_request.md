@@ -1,6 +1,6 @@
 ---
-name: Update pull request
-about: Creates or removes given standard
+name: Redact request
+about: Redacts given standard to make it more explanatory
 title: ''
 labels: enhancement
 reviewers: ''
