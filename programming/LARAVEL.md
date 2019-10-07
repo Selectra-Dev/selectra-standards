@@ -7,13 +7,15 @@ Laravel and Eloquent good practices and standards
 
 2. [Eloquent](#eloquent)
 
-3. [Blade](#blade)
+3. [Migrations](#migrations)
+
+4. [Blade](#blade)
 
 # Laravel
 
 - **SHOULD** use contracts instead of facades
 
-    > Facades are really nice feature but they encourage developers to build complex and unmaintainable code. Having dependencies injected explicitly we gain more control over our code. 
+    > Facades are really nice feature but they encourage developers to build complex and unmaintainable code. Having dependencies injected explicitly we gain more control over our code.
 
 - **MUST** use controller routes instead of closures
 
@@ -23,7 +25,7 @@ Laravel and Eloquent good practices and standards
 
 - **SHOULD NOT** use polymorphic relations
 
-    > They're not using indexes. Please rethink twice before creating such relation. 
+    > They're not using indexes. Please rethink twice before creating such relation.
 
 - **SHOULD** separate migrations into multiple files if they are not related with each other
 
@@ -50,6 +52,32 @@ Laravel and Eloquent good practices and standards
 - **MUST** prefix external indexes properties
 
     > For example ZohoCRM that we use frequently (its properties should be prefixed with `zoho_`).
+
+# Migrations
+
+- **MUST NOT** implement no-create migrations in pre-release phase
+
+    > If application is not deployed on production (meaning database is always re-created) don't create altering migrations but adjust **creating table** migration.
+
+- **MUST** follow `create_{table_name}_table` pattern when writing **creating table** migration
+
+- **MUST** follow `update_{index}_{table_name}_table` pattern when writing **updating table** migration
+
+    > A **bulk** update that might contain `adding`, `removing` and `updating` columns. This also includes changing schema collation and manipulating indexes.
+
+- **MUST** follow `add_{column_name}_to_{table_name}_table` pattern when writing **adding column** migration
+
+- **MUST** follow `remove_{column_name}_from_{table_name}_table` pattern when writing **removing column** migration
+
+- **MUST** follow `update_{index}_{column_name}_in_{table_name}_table` pattern when writing **updating column** migration
+
+- **Updating table** migration **MUST** contain proper class documentation briefly listing what changes are done
+
+    > Don't make other developers review the `up` and `down` methods code.
+
+- **SHOULD** create independent migrations for each column
+
+    > In some situations it's more convenient to have bulk **updating table** migration. By having multiple migrations it's easier to see what changed (you don't need to read bulk migration documentation).
 
 # Blade
 
