@@ -46,3 +46,7 @@ This document contains the common standards for all the [markdown](https://darin
     > Preferably, on the same list, they shouldn't mix.
 
 - **MUST** end with a **single** blank line
+
+- Additional markdown files and attachments (for example images, graphs or example input files) **SHOULD BE** placed under the **documentation** directory.
+
+- If a chapter requires more than **three** levels of headers it **SHOULD BE** extracted to the separated file.
