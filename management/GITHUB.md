@@ -3,19 +3,31 @@ GitHub
 
 # Table of contents
 
-1. [Our workflows](#our-workflows)
+1. [Naming convention](#naming-convention)
 
-    1.1. [Default workflows](#default-workflows)
+2. [Workflow](#workflow)
 
-    1.2. [Extended workflow](#extended-workflows)
+    2.1. [Default workflows](#default-workflows)
 
-2. [Commits](#commits)
+    2.2. [Extended workflow](#extended-workflows)
 
-    2.1. [When do I need to commit?](#when-do-i-need-to-commit)
+3. [Commits](#commits)
 
-    2.2. [How do I write my commits](#how-do-i-write-my-commits)
+    3.1. [When do I need to commit?](#when-do-i-need-to-commit)
 
-# Our workflows
+    3.2. [How do I write my commits](#how-do-i-write-my-commits)
+
+# Naming convention
+
+- **SHOULD** kebab-case for repository name
+
+    > If it's technically impossible, use snake_case.  
+
+- API Client repository **MUST** consist of programming language name and follow [`api-{language}-client-{name}`](https://github.com/Selectra-Dev?utf8=✓&q=*-api-*-client) pattern 
+
+    > Most of the libraries we create [aren't SDK's](https://github.com/Selectra-Dev/standards/issues/8). If they're containing integration tools (like debugger's, helpers or view generators), you can consider them SDK and call repository `sdk-{language}-{name}`.
+
+# Workflow
 
 We use two different types of workflow depending on the project size. For most of our projects, we stick to the one we refer to as "Default workflows". However, for bigger projects, we might opt for the extended one.
 
