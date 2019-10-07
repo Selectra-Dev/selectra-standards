@@ -14,4 +14,4 @@ A clear and concise description of what you want to redact.
 A clear and concise description of any alternative description you've considered.
 
 **Additional context**
-Add any other context about the redact request here. Support your request.
+Add any other context about the `redact` request here. Support your request.
