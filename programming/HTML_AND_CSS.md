@@ -4,24 +4,24 @@ HTML and CSS
 # Table of contents
 
 1. [Technical specifications](#technical-specifications)
-
-  1.1. [Design System](#design-system)
-
-  1.2. [Editor](#editor)
-
-  1.3. [HTML](#html)
-
-  1.4. [CSS](#css)
-
-  1.5. [Deployment](#deployment)
+    
+    1.1. [Design System](#design-system)
+    
+    1.2. [Editor](#editor)
+    
+    1.3. [HTML](#html)
+    
+    1.4. [CSS](#css)
+    
+    1.5. [Deployment](#deployment)
 
 2. [Icons and images](#icons-and-images)
 
 3. [Useful links](#useful-links)
 
-  3.1. [Common files](#common-files)
-
-  3.1. [Menu/footer](#menu-footer-and-cookie)
+    3.1. [Common files](#common-files)
+    
+    3.1. [Menu/footer](#menu-footer-and-cookie)
 
 # Technical specifications
 

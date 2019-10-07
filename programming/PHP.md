@@ -5,15 +5,15 @@ This document indicates the standards we follow during PHP project development.
 
 It consists of **naming conventions**, **architecture patterns**, **style guidelines** and **good practices**.
 
+> As a base standards (considered as a **MUST**) we use [PSR-1](http://www.php-fig.org/psr/psr-1/) specifications in order to facilitate maintenance.
+
 # Table of contents
 
-1. [Variables](#variables)
-
-2. [Functions](#functions)
-
-3. [Documentation](#documentation)
+1. [Naming convention](#namig-convention)
 
 4. [Style](#style)
+
+3. [Documentation](#documentation)
 
 5. [Composer](#composer)
 
@@ -21,7 +21,20 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
 
     6.1. [Laravel](#laravel)
 
-# Variables
+# Naming convention
+
+- **MUST** use `camelCase` for variable and function names
+
+    ```php
+    $fooBarBaz = 'qux';
+    function fooBarBaz() {}
+    ```
+
+# Style
+
+- **SHOULD** use [CodeSniffer](https://pear.php.net/package/PHP_CodeSniffer) with our internal [configuration](https://github.com/Selectra-Dev/code-sniffer)
+
+    > [MessDetector](https://phpmd.org/) is also good choice!
 
 - **MUST** use single quotes for strings
 
@@ -38,46 +51,14 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
         'bar' => 'baz',
     ];
     ```
+  
   > Inline arrays, like `$foo = ['bar' => 'baz']`, are correct (they seem to be __prettier__ without comma).
-
-- **MUST** use `camelCase`
-
-    ```php
-    $fooBarBaz = 'qux';
-    ```
-
-# Functions
-
-- **MUST** use `camelCase`
-
-    ```php
-    function fooBarBaz() {}
-    ```
-
-# Documentation
-
-- **MUST** use short name type hinting names like `bool`, `int` or `str` instead of `boolean`, `integer`, `string`
-
-    > Using long type names creates unnecessary overhead. Use reserved keywords.
-
-- **MUST** use `float` instead of `double` when documenting floating-point variable
-
-    ```php
-    /** @var float $fooBarBaz */
-    $fooBarBaz = .5;
-    ```
-
-    > `float` is a type and `double` is [alias](https://www.php.net/manual/en/language.types.php) to `float`.
-
-# Style
-
-- The developer **MUST** follow the [PSR-1](http://www.php-fig.org/psr/psr-1/) and [PSR-2](http://www.php-fig.org/psr/psr-2/) specifications in order to facilitate maintenance
-
-- Ideally developer **SHOULD** use CodeSniffer with our internal [configuration](https://github.com/Selectra-Dev/code-sniffer)
 
 # Composer
 
-Composer is a PHP package manager we use in every project its considered as inseparable part of PHP standards.
+[Composer](https://getcomposer.org) is a PHP package manager used in modern PHP development. 
+
+> We don't ship any PHP without it so it's considered as inseparable part of PHP standards.
 
 - **MUST** keep `composer.json` configuration properties in the official order
 
@@ -89,13 +70,13 @@ Composer is a PHP package manager we use in every project its considered as inse
 
 - **MUST** keep private repositories (`repositories`) in alphabetical order
 
+- **MUST** keep `authors` in the alphabetical order and **updated**
+
+    > Minimal necessary details are `name` (surname first), `email` and `role`. Sort by contributor **surname**.
+
 - **MUST** use [Tristan's wrapper](https://github.com/Selectra-Dev/tristanjahier/zoho-crm-php) whenever connecting to [ZohoCRM](https://crm.zoho.com/)
 
-- **MUST** keep `authors` updated
-
-    > Minimal necessary details are `name`, `email` and `role`.
-
-# Comments
+# Comments and code documentation
 
 - **MUST** follow the specifications of [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html)
 
@@ -112,6 +93,19 @@ Composer is a PHP package manager we use in every project its considered as inse
 
     > They are mandatory for arguments like `/** @param string|int $foo */`.
     > Please also double-check its implementation in such situation. It might be badly designed.   
+
+- **MUST** use short name type hinting names like `bool`, `int` or `str` instead of `boolean`, `integer`, `string`
+
+    > Using long type names creates unnecessary overhead. Use reserved keywords.
+
+- **MUST** use `float` instead of `double` when documenting floating-point variable
+
+    ```php
+    /** @var float $fooBarBaz */
+    $fooBarBaz = .5;
+    ```
+
+    > `float` is a type and `double` is [alias](https://www.php.net/manual/en/language.types.php) to `float`.
 
 # Deployment
 
@@ -139,7 +133,13 @@ Credentials **MUST NOT** be stored as plain text on the repository (especially p
 
 - The latest **LTS** release of Laravel **MUST** be used. The latest stable release **SHOULD** be used
 
-    > Laravel good practices and standard are described in details [here](php/LARAVEL.md).
+    > Laravel's good practices and standard are described in details [here](LARAVEL.md).
+
+## Drupal
+
+- Use version **8** of Drupal
+
+    > Drupal's good practices and standard are described in details [here](DRUPAL.md).
 
 # Server configuration
 

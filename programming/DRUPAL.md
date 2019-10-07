@@ -1,6 +1,8 @@
-Drupal 8 good practices, standards and resources
+Drupal
 =
 
+**Drupal 8** - Good practices, standards and resources.
+ 
 # Table of contents
 
 1. [General information](#general-information)
