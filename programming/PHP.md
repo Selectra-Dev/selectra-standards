@@ -9,17 +9,27 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
 
 # Table of contents
 
-1. [Naming convention](#namig-convention)
+1. [Naming convention](#naming-convention)
 
-4. [Style](#style)
+2. [Style](#style)
 
-3. [Documentation](#documentation)
+3. [Comments and code documentation](#comments-and-code-documentation)
 
-5. [Composer](#composer)
+4. [Composer](#composer)
 
+5. [Deployment](#deployment)
+
+    5.1. [Workflow](#workflow)
+
+    5.2. [Environment variables](#environment-variables)
+     
 6. [Frameworks](#frameworks)
 
     6.1. [Laravel](#laravel)
+
+    6.2. [Drupal](#drupal)
+
+7. [Server configuration](#server-configuration)
 
 # Naming convention
 
@@ -54,28 +64,6 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
   
   > Inline arrays, like `$foo = ['bar' => 'baz']`, are correct (they seem to be __prettier__ without comma).
 
-# Composer
-
-[Composer](https://getcomposer.org) is a PHP package manager used in modern PHP development. 
-
-> We don't ship any PHP without it so it's considered as inseparable part of PHP standards.
-
-- **MUST** keep `composer.json` configuration properties in the official order
-
-    > Follow the [official schema](https://getcomposer.org/doc/04-schema.md).
-
-- **MUST** keep dependencies (`require` and `require-dev`) in the alphabetical order
-
-    > This is automated by `sort-packages` configuration option. If you're editing `composer.json` manually, please remember about the order.
-
-- **MUST** keep private repositories (`repositories`) in alphabetical order
-
-- **MUST** keep `authors` in the alphabetical order and **updated**
-
-    > Minimal necessary details are `name` (surname first), `email` and `role`. Sort by contributor **surname**.
-
-- **MUST** use [Tristan's wrapper](https://github.com/Selectra-Dev/tristanjahier/zoho-crm-php) whenever connecting to [ZohoCRM](https://crm.zoho.com/)
-
 # Comments and code documentation
 
 - **MUST** follow the specifications of [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html)
@@ -105,7 +93,29 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
     $fooBarBaz = .5;
     ```
 
-    > `float` is a type and `double` is [alias](https://www.php.net/manual/en/language.types.php) to `float`.
+    > `float` is a type and `double` is an [alias](https://www.php.net/manual/en/language.types.php) to `float`.
+
+# Composer
+
+[Composer](https://getcomposer.org) is a PHP package manager used in modern PHP development. 
+
+> We don't ship any PHP without it so it's considered as inseparable part of PHP standards.
+
+- **MUST** keep `composer.json` configuration properties in the official order
+
+    > Follow the [official schema](https://getcomposer.org/doc/04-schema.md).
+
+- **MUST** keep dependencies (`require` and `require-dev`) in the alphabetical order
+
+    > This is automated by `sort-packages` configuration option. If you're editing `composer.json` manually, please remember about the order.
+
+- **MUST** keep private repositories (`repositories`) in alphabetical order
+
+- **MUST** keep `authors` in the alphabetical order and **updated**
+
+    > Minimal necessary details are `name` (surname first), `email` and `role`. Sort by contributor **surname**.
+
+- **MUST** use [Tristan's wrapper](https://github.com/Selectra-Dev/tristanjahier/zoho-crm-php) whenever connecting to [ZohoCRM](https://crm.zoho.com/)
 
 # Deployment
 
@@ -123,9 +133,9 @@ In any case, the environment variables you used in your project **MUST** be list
 
 Credentials **MUST NOT** be stored as plain text on the repository (especially production ones). Instead, you **SHOULD** provide an example of configuration file and eventually give instructions on how to create them.
 
-# Framework
+# Frameworks
 
-- A framework **MUST** be used for the project, to make for a better code and an easier maintenance
+- A framework **SHOULD** be used for the project, to make for a better code and an easier maintenance
 
 - In Selectra we are using **Laravel** framework. However if the developer is more comfortable working with another framework, it may be possible - pending our CTO's approval
 
