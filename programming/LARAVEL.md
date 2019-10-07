@@ -1,5 +1,7 @@
-Laravel and Eloquent good practices and standards
+Laravel
 =
+
+Laravel's ecosystem standardization.
 
 # Table of contents
 
@@ -9,41 +11,31 @@ Laravel and Eloquent good practices and standards
 
 3. [Migrations](#migrations)
 
-4. [Blade](#blade)
+4. [Seeders](#seeders)
+
+5. [Blade](#blade)
 
 # Laravel
 
-- **SHOULD** use contracts instead of facades
-
-    > Facades are really nice feature but they encourage developers to build complex and unmaintainable code. Having dependencies injected explicitly we gain more control over our code.
-
 - **MUST** use controller routes instead of closures
+
+    > Closures can't be cached and it's hard to reflect them.
 
 - **SHOULD** use [form requests](https://laravel.com/docs/master/validation#form-request-validation) whenever application is modifying something
 
-- **SHOULD NOT** use policies to check if the user is allowed to make modifications
+- **SHOULD** prefer [contracts](https://laravel.com/docs/master/contracts) to [facades](https://laravel.com/docs/master/facades)
 
-- **SHOULD NOT** use polymorphic relations
+    > Facades are really nice feature but they encourage developers to build complex and unmaintainable code. Having dependencies injected explicitly we gain more control over our code.
 
-    > They're not using indexes. Please rethink twice before creating such relation.
+- **SHOULD** prefer [policies](https://laravel.com/docs/master/authorization#authorizing-actions-using-policies) to [gates](https://laravel.com/docs/master/authorization#gates)
 
-- **SHOULD** separate migrations into multiple files if they are not related with each other
+- **SHOULD** use [`selectra-dev/laravel-deploy`](https://github.com/Selectra-Dev/laravel-deploy) package
 
-    > For example, in the case of moving a column from one table to another, it is always preferable to have 1 migration like `move_category_id_from_foo_table_to_bar_table`, rather than 3 migrations like `create_category_id_in_bar_table`, `copy_category_ids_from_foo_table_to_bar_table` and `remove_category_id_from_foo_table`.
-
-- **SHOULD** separate seeders into multiple files
-
-    > This way they're simpler to maintain. Migration file name should be self-explanatory.
-
-- **SHOULD** use `selectra-dev/laravel-deploy` package
-
-- **MUST NOT** use aliases in Laravel packages and portable code
+    > This repository holds common useful laravel tools.
 
 - **MUST** name Traits in passive voice
 
-    > For example CompilesLoops.
-
-# Eloquent
+    > For example CompilesLoops. This is Laravel's naming convention and it should be maintained for consistency.
 
 - **SHOULD** use built-in authentication system
 
@@ -53,7 +45,23 @@ Laravel and Eloquent good practices and standards
 
     > For example ZohoCRM that we use frequently (its properties should be prefixed with `zoho_`).
 
+- **MUST NOT** use [aliases](https://laravel.com/docs/master/facades#facade-class-reference) in Laravel packages and portable code
+
+# Eloquent
+
+- **SHOULD NOT** use [polymorphic relations](https://laravel.com/docs/master/eloquent-relationships#polymorphic-relationships)
+
+    > They're not using indexes. Please rethink twice before creating such relation.
+
 # Migrations
+
+- **SHOULD** separate migrations for independent tables
+
+    > But in the case of moving a column from one table to another, it is always preferable to have one migration like `move_category_id_from_foo_table_to_bar_table`, rather than 3 migrations like `create_category_id_in_bar_table`, `copy_category_ids_from_foo_table_to_bar_table` and `remove_category_id_from_foo_table`.
+
+- **SHOULD** separate migrations for independent columns
+
+    > In some situations it's more convenient to have bulk **updating table** migration. By having multiple migrations it's easier to see what changed (you don't need to read bulk migration documentation).
 
 - **MUST NOT** implement no-create migrations in pre-release phase
 
@@ -71,13 +79,15 @@ Laravel and Eloquent good practices and standards
 
 - **MUST** follow `update_{index}_{column_name}_in_{table_name}_table` pattern when writing **updating column** migration
 
-- **Updating table** migration **MUST** contain proper class documentation briefly listing what changes are done
+- Bulk **updating table** migration **MUST** contain proper class-scope documentation briefly listing what changes are done
 
-    > Don't make other developers review the `up` and `down` methods code.
+    > Don't force other developers review the `up` and `down` methods code themselves.
 
-- **SHOULD** create independent migrations for each column
+# Seeders
 
-    > In some situations it's more convenient to have bulk **updating table** migration. By having multiple migrations it's easier to see what changed (you don't need to read bulk migration documentation).
+- **SHOULD** separate seeders into multiple files
+
+    > This way they're simpler to maintain. Migration file name should be self-explanatory.
 
 # Blade
 

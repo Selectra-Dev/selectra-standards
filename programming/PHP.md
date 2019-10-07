@@ -5,23 +5,46 @@ This document indicates the standards we follow during PHP project development.
 
 It consists of **naming conventions**, **architecture patterns**, **style guidelines** and **good practices**.
 
+> As a base standards (considered as a **MUST**) we use [PSR-1](http://www.php-fig.org/psr/psr-1/) specifications in order to facilitate maintenance.
+
 # Table of contents
 
-1. [Variables](#variables)
+1. [Naming convention](#naming-convention)
 
-2. [Functions](#functions)
+2. [Style](#style)
 
-3. [Documentation](#documentation)
+3. [Comments and code documentation](#comments-and-code-documentation)
 
-4. [Style](#style)
+4. [Composer](#composer)
 
-5. [Composer](#composer)
+5. [Deployment](#deployment)
+
+    5.1. [Workflow](#workflow)
+
+    5.2. [Environment variables](#environment-variables)
 
 6. [Frameworks](#frameworks)
 
     6.1. [Laravel](#laravel)
 
-# Variables
+    6.2. [Drupal](#drupal)
+
+7. [Server configuration](#server-configuration)
+
+# Naming convention
+
+- **MUST** use `camelCase` for variable and function names
+
+    ```php
+    $fooBarBaz = 'qux';
+    function fooBarBaz() {}
+    ```
+
+# Style
+
+- **SHOULD** use [PHP_CodeSniffer](https://pear.php.net/package/PHP_CodeSniffer) with our internal [configuration](https://github.com/Selectra-Dev/code-sniffer)
+
+    > [PHP Mess Detector](https://phpmd.org/) is also good choice!
 
 - **MUST** use single quotes for strings
 
@@ -38,23 +61,26 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
         'bar' => 'baz',
     ];
     ```
+
   > Inline arrays, like `$foo = ['bar' => 'baz']`, are correct (they seem to be __prettier__ without comma).
 
-- **MUST** use `camelCase`
+# Comments and code documentation
 
-    ```php
-    $fooBarBaz = 'qux';
-    ```
+- **MUST** follow the specifications of [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html)
 
-# Functions
+- **MUST NOT** comment self-explanatory methods
 
-- **MUST** use `camelCase`
+    > Functions like getters and setters are obvious and don't need any explanations.
+    > Please also double-check its implementation in such situation. It might be badly designed.
 
-    ```php
-    function fooBarBaz() {}
-    ```
+- **SHOULD NOT** contain PhpDoc's when arguments and return type are self explicitly defined
 
-# Documentation
+    > They are optional for methods like `public function foo(string $bar): \baz;`
+
+- **MUST** contain PhpDocs's when arguments and return type aren't explicitly defined
+
+    > They are mandatory for arguments like `/** @param string|int $foo */`.
+    > Please also double-check its implementation in such situation. It might be badly designed.
 
 - **MUST** use short name type hinting names like `bool`, `int` or `str` instead of `boolean`, `integer`, `string`
 
@@ -67,17 +93,13 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
     $fooBarBaz = .5;
     ```
 
-    > `float` is a type and `double` is [alias](https://www.php.net/manual/en/language.types.php) to `float`.
-
-# Style
-
-- The developer **MUST** follow the [PSR-1](http://www.php-fig.org/psr/psr-1/) and [PSR-2](http://www.php-fig.org/psr/psr-2/) specifications in order to facilitate maintenance
-
-- Ideally developer **SHOULD** use CodeSniffer with our internal [configuration](https://github.com/Selectra-Dev/code-sniffer)
+    > `float` is a type and `double` is an [alias](https://www.php.net/manual/en/language.types.php) to `float`.
 
 # Composer
 
-Composer is a PHP package manager we use in every project its considered as inseparable part of PHP standards.
+[Composer](https://getcomposer.org) is a PHP package manager used in modern PHP development.
+
+> We don't ship any PHP without it so it's considered as inseparable part of PHP standards.
 
 - **MUST** keep `composer.json` configuration properties in the official order
 
@@ -89,29 +111,11 @@ Composer is a PHP package manager we use in every project its considered as inse
 
 - **MUST** keep private repositories (`repositories`) in alphabetical order
 
+- **MUST** keep `authors` in the alphabetical order and **updated**
+
+    > Minimal necessary details are `name` (surname first), `email` and `role`. Sort by contributor **surname**.
+
 - **MUST** use [Tristan's wrapper](https://github.com/Selectra-Dev/tristanjahier/zoho-crm-php) whenever connecting to [ZohoCRM](https://crm.zoho.com/)
-
-- **MUST** keep `authors` updated
-
-    > Minimal necessary details are `name`, `email` and `role`.
-
-# Comments
-
-- **MUST** follow the specifications of [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html)
-
-- **MUST NOT** comment self-explanatory methods
-
-    > Functions like getters and setters are obvious and don't need any explanations. 
-    > Please also double-check its implementation in such situation. It might be badly designed. 
-
-- **SHOULD NOT** contain PhpDoc's when arguments and return type are self explicitly defined
-
-    > They are optional for methods like `public function foo(string $bar): \baz;`
-
-- **MUST** contain PhpDocs's when arguments and return type aren't explicitly defined
-
-    > They are mandatory for arguments like `/** @param string|int $foo */`.
-    > Please also double-check its implementation in such situation. It might be badly designed.   
 
 # Deployment
 
@@ -129,9 +133,9 @@ In any case, the environment variables you used in your project **MUST** be list
 
 Credentials **MUST NOT** be stored as plain text on the repository (especially production ones). Instead, you **SHOULD** provide an example of configuration file and eventually give instructions on how to create them.
 
-# Framework
+# Frameworks
 
-- A framework **MUST** be used for the project, to make for a better code and an easier maintenance
+- A framework **SHOULD** be used for the project, to make for a better code and an easier maintenance
 
 - In Selectra we are using **Laravel** framework. However if the developer is more comfortable working with another framework, it may be possible - pending our CTO's approval
 
@@ -139,7 +143,13 @@ Credentials **MUST NOT** be stored as plain text on the repository (especially p
 
 - The latest **LTS** release of Laravel **MUST** be used. The latest stable release **SHOULD** be used
 
-    > Laravel good practices and standard are described in details [here](php/LARAVEL.md).
+    > Laravel's good practices and standard are described in details [here](LARAVEL.md).
+
+## Drupal
+
+- Use version **8** of Drupal
+
+    > Drupal's good practices and standard are described in details [here](DRUPAL.md).
 
 # Server configuration
 

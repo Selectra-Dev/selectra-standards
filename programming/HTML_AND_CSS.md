@@ -5,23 +5,23 @@ HTML and CSS
 
 1. [Technical specifications](#technical-specifications)
 
-  1.1. [Design System](#design-system)
+    1.1. [Design System](#design-system)
 
-  1.2. [Editor](#editor)
+    1.2. [Editor](#editor)
 
-  1.3. [HTML](#html)
+    1.3. [HTML](#html)
 
-  1.4. [CSS](#css)
+    1.4. [CSS](#css)
 
-  1.5. [Deployment](#deployment)
+    1.5. [Deployment](#deployment)
 
 2. [Icons and images](#icons-and-images)
 
 3. [Useful links](#useful-links)
 
-  3.1. [Common files](#common-files)
+    3.1. [Common files](#common-files)
 
-  3.1. [Menu/footer](#menu-footer-and-cookie)
+    3.1. [Menu/footer](#menu-footer-and-cookie)
 
 # Technical specifications
 
@@ -77,7 +77,7 @@ CSS files **MUST** these rules:
 
 ## Deployment
 
-In order to optimize our workflow, our system administrator needs to be able to deploy the project without any knowledge of its inner workings. 
+In order to optimize our workflow, our system administrator needs to be able to deploy the project without any knowledge of its inner workings.
 
 This means that the code **MUST** be shipped in such a way that it can be built easily using a well defined procedure. This procedure **MUST** be exhaustively described in a `README.md` file.
 

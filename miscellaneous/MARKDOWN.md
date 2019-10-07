@@ -17,11 +17,11 @@ This document contains the common standards for all the [markdown](https://darin
 
 - **MUST** use underscores (`_`) to separate words in the file name
 
-    > Improves readability.
+    > This improves readability.
 
 # Contents
 
-- **MUST** begin document with its title - use **single** equal sign (`=`)
+- **MUST** begin document with its title - use a **single** equal sign (`=`)
 
     > Most of the times it's humanized file name (without underscores), but sometimes might be extended abbreviation (for example file name is `PHP.md` but the title is `PHP Hypertext Preprocessor`).
 
@@ -43,6 +43,6 @@ This document contains the common standards for all the [markdown](https://darin
 
 - **MUST** use numbers (ended with comma, for example `1.` or `1.1.`) or hyphen-minus (`-`)
 
-    > Preferably, they shouldn't mix.
+    > Preferably, on the same list, they shouldn't mix.
 
 - **MUST** end with a **single** blank line

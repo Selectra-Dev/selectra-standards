@@ -25,21 +25,21 @@ Standardized guidelines for technical members of Selectra.
 
 This repository contains Selectra's standards every technical member **MUST** follow when **designing**, **developing** and **maintaining** company's products.
 
-Such standardization is necessary to conduct **successful teamwork** and deliver high quality software by ensuring consistency across all of them.
+Such standardization is necessary to conduct **successful teamwork** and **deliver high quality software** by ensuring consistency across all of them.
 
 # Contents
 
-This documentation is separated into two main areas that covers respectively [Management](#management) and [Programming](#programming).
+This documentation is separated into **three** main areas that covers respectively [**Programming**](#programming), [**Operations**](#operations) and [**Management**](#management).
 
 There is also auxiliary [Miscellaneous](#miscellaneous) document, that is suitable for general subjects.
 
 ## Programming
 
-Selectra develops and maintains mainly [**PHP**](/programming/PHP.md), [**Ruby**]() and [**JavaScript**](/programming/JAVASCRIPT.md) applications. They're su
+Selectra **develops** and **maintains** mainly [**PHP**](/programming/PHP.md), [**Ruby**]() and [**JavaScript**](/programming/JAVASCRIPT.md) applications.
 
 Often they are supplemented with other languages/technologies like [**HTML and CSS**](/programming/HTML_AND_CSS.md) and [**SQL**](/programming/SQL_AND_MYSQL.md).
 
-All of those languages/technologies have separate file that contains its standards.
+> All of those languages/technologies have separate file that contains its standards.
 
 ## Operations
 
@@ -55,17 +55,17 @@ The most important aspects of management are [**GitHub**](/management/GITHUB.md)
 
 ## Miscellaneous
 
-Various standardization not suitable for either [Programming](#programming) or [Management](#management).
+Various standardization not suitable for either [**Programming**](#programming) or [**Management**](#management).
 
 # Contributing
 
-Such standardization aims to satisfy all the technical members. 
+Such standardization aims to satisfy all the technical members.
 
 Any concerns, misunderstandings and arguments have to be discussed through [GitHub Issues](https://github.com/Selectra-Dev/selectra-standards/issues/new) supplemented by provided [issue templates](.github/ISSUE_TEMPLATE).
 
-> If one problem was raised more than once it deserves to be mentioned in this documentation.
+> If one problem was raised **more than once**, or has two completely different opinions, it deserves to be mentioned in this document.
 
-Once discussed, please create a new pull request using provided [pull request templates](.github/ISSUE_TEMPLATE).
+Once discussed, please create a new pull request using provided [pull request templates](.github/PULL_REQUEST_TEMPLATE).
 
 # Support
 
