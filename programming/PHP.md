@@ -42,9 +42,9 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
 
 # Style
 
-- **SHOULD** use [CodeSniffer](https://pear.php.net/package/PHP_CodeSniffer) with our internal [configuration](https://github.com/Selectra-Dev/code-sniffer)
+- **SHOULD** use [PHP_CodeSniffer](https://pear.php.net/package/PHP_CodeSniffer) with our internal [configuration](https://github.com/Selectra-Dev/code-sniffer)
 
-    > [MessDetector](https://phpmd.org/) is also good choice!
+    > [PHP Mess Detector](https://phpmd.org/) is also good choice!
 
 - **MUST** use single quotes for strings
 
