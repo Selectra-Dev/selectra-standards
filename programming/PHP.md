@@ -77,23 +77,54 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
 
     > They are optional for methods like `public function foo(string $bar): \baz;`
 
-- **MUST** contain PhpDocs's when arguments and return type aren't explicitly defined
+- **MUST** contain PhpDocs when arguments and return type aren't explicitly defined
 
     > They are mandatory for arguments like `/** @param string|int $foo */`.
     > Please also double-check its implementation in such situation. It might be badly designed.
 
-- **MUST** use short name type hinting names like `bool`, `int` or `str` instead of `boolean`, `integer`, `string`
+- **SHOULD** write a comment before a multidimensional array to define the name and type of each value
+    ```php
+    public function FooBarBazzProvider(): array
+    {
+        /**
+         * @var string $foo
+         * @var int $bar
+         * @var string $bazz
+         */
+        return [
+            ['foo', BarInterface::BAR_1, 'bazz 1'],
+            ['foo', BarInterface::BAR_2, 'bazz 2'],
+            ['foo', BarInterface::BAR_3, 'bazz 3'],
+            ['foo', BarInterface::BAR_4, 'bazz 4'],
+            ['foo', BarInterface::BAR_5, 'bazz 5'],
+            ['foo', BarInterface::BAR_6, 'bazz 6'],
+            ['foo', BarInterface::BAR_7, 'bazz 7'],
+            ['foo', BarInterface::BAR_8, 'bazz 8'],
+        ];
+    }
+    ```
 
-    > Using long type names creates unnecessary overhead. Use reserved keywords.
-
-- **MUST** use `float` instead of `double` when documenting floating-point variable
+- **MUST NOT** use `double` in PhpDocs when documenting floating-point variable
 
     ```php
     /** @var float $fooBarBaz */
     $fooBarBaz = .5;
     ```
 
-    > `float` is a type and `double` is an [alias](https://www.php.net/manual/en/language.types.php) to `float`.
+    > Although `double` is valid annotation, `float` is a type and `double` is its [alias](https://www.php.net/manual/en/language.types.php).
+
+- **MUST** use reserved keywords in PhpDocs
+
+    > Using long/short type names creates unnecessary overhead. 
+    >
+    > ```php
+    >  /** 
+    >   * @param double 
+    >   * @return str 
+    >   */ 
+    >  function foo(float $bar): string {...}
+    > ```
+    >
 
 # Composer
 
