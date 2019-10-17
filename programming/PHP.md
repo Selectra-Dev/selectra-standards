@@ -66,7 +66,7 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
 
 # Comments and code documentation
 
-- **MUST** follow the specifications of [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html)
+- **MUST** follow the specifications of [PSR-5: PHPDoc](https://github.com/php-fig/fig-standards/blob/master/proposed/phpdoc.md) and [phpDocumentor](https://www.phpdoc.org/docs/latest/index.html)
 
 - **MUST NOT** comment self-explanatory methods
 
@@ -94,6 +94,19 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
     ```
 
     > `float` is a type and `double` is an [alias](https://www.php.net/manual/en/language.types.php) to `float`.
+
+- **MUST** align variables and their comments in the PhpDocs
+
+   ```php
+   /**
+    * @param        $one   The first parameter
+    * @param int    $two   The second parameter
+    * @param string $three The third parameter
+    */
+   function foo($one, int $two = 0, $three = "String"): void
+   {
+   }
+   ```
 
 # Composer
 
