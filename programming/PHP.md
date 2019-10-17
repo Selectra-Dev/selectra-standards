@@ -95,7 +95,8 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
 
     > `float` is a type and `double` is an [alias](https://www.php.net/manual/en/language.types.php) to `float`.
 
-- **MUST** use the same number of spaces between the type, the parameter name and the description
+- **MUST** align variables and their comments in the PhpDocs
+
    ```php
    /**
     * @param        $one   The first parameter
