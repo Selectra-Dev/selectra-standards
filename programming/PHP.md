@@ -83,6 +83,7 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
     > Please also double-check its implementation in such situation. It might be badly designed.
 
 - **SHOULD** write a comment before a multidimensional array to define the name and type of each value
+
     ```php
     public function FooBarBazzProvider(): array
     {
@@ -115,13 +116,13 @@ It consists of **naming conventions**, **architecture patterns**, **style guidel
 
 - **MUST** use reserved keywords in PhpDocs
 
-    > Using long/short type names creates unnecessary overhead. 
+    > Using long/short type names creates unnecessary overhead.
     >
     > ```php
-    >  /** 
-    >   * @param double 
-    >   * @return str 
-    >   */ 
+    >  /**
+    >   * @param double
+    >   * @return str
+    >   */
     >  function foo(float $bar): string {...}
     > ```
     >
